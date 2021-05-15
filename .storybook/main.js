@@ -4,11 +4,56 @@
  *
  * https://storybook.js.org/docs/react/configure/overview#configure-story-rendering
  */
+
+const path = require("path");
+const webpack = require("webpack");
+
+const CWD = process.cwd();
+
 module.exports = {
-	stories: ["../stories/**/*.mdx", "../stories/**/*.@(js|jsx|ts|tsx)"],
+	stories: [
+		"../src/stories/**/*.mdx",
+		"../src/stories/**/*.@(js|jsx|ts|tsx)",
+	],
 	addons: [
 		"@storybook/addon-links",
 		"@storybook/addon-essentials",
 		"@storybook/preset-scss",
 	],
+	webpackFinal: async (config) => {
+		// Include module components to run babel on. Path from where the
+		// `yarn storybook` command is run.
+		config.module.rules[0].include.push(
+			path.resolve(process.env.MODULE_PATH)
+		);
+
+		config.module.rules.push({
+			exclude: /node_modules/,
+			test: /\.js$/,
+			use: [
+				{
+					loader: "liferay-lang-key-dev-loader",
+					options: {
+						path: path.join(__dirname, "Language.properties"),
+					},
+				},
+			],
+		});
+
+		config.plugins.push(
+			new webpack.NormalModuleReplacementPlugin(
+				/frontend-js-react-web/,
+				path.join(__dirname, "frontend-js-react-web.mock.js")
+			)
+		);
+
+		config.plugins.push(
+			new webpack.NormalModuleReplacementPlugin(
+				/frontend-js-web/,
+				path.join(__dirname, "frontend-js-web.mock.js")
+			)
+		);
+
+		return config;
+	},
 };
