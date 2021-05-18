@@ -1,6 +1,6 @@
 import React from "react";
 
-import SearchInput from "../../../liferay-portal-master/portal/modules/dxp/apps/portal-search-tuning/portal-search-tuning-blueprints-admin-web/src/main/resources/META-INF/resources/js/shared/SearchInput";
+import SearchInput from "src/main/resources/META-INF/resources/js/shared/SearchInput";
 
 export default {
 	title: "Components/SearchInput",

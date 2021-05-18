@@ -1,0 +1,87 @@
+import React from "react";
+
+import EditBlueprintForm from "src/main/resources/META-INF/resources/js/edit_blueprint/index";
+import CONTEXT from "../context";
+import {
+	ENTITY_JSON,
+	INDEX_FIELDS,
+	SEARCHABLE_ASSET_TYPES,
+	INITIAL_CONFIGURATION,
+	ELEMENT_OUTPUTS,
+	SELECTED_ELEMENTS,
+} from "../data";
+
+export default {
+	title: "Pages/Edit Blueprint",
+	component: EditBlueprintForm,
+	parameters: {
+		layout: "fullscreen",
+	},
+	args: {
+		context: CONTEXT,
+	},
+};
+
+const Template = (args) => <EditBlueprintForm {...args} />;
+
+export const AllElements = Template.bind({});
+
+AllElements.args = {
+	props: {
+		blueprintId: "1",
+		blueprintType: 0,
+		entityJSON: ENTITY_JSON,
+		indexFields: INDEX_FIELDS,
+		initialConfigurationString: JSON.stringify(INITIAL_CONFIGURATION),
+		initialDescription: {},
+		initialTitle: {
+			"en-US": "Test Title",
+		},
+		queryElements: SELECTED_ELEMENTS,
+		redirectURL: "",
+		searchableAssetTypes: SEARCHABLE_ASSET_TYPES,
+		submitFormURL: "",
+		initialConfigurationString: JSON.stringify({
+			...INITIAL_CONFIGURATION,
+			query_configuration: ELEMENT_OUTPUTS,
+		}),
+		initialSelectedElementsString: JSON.stringify({
+			query_configuration: SELECTED_ELEMENTS,
+		}),
+		searchResultsURL:
+			"https://run.mocky.io/v3/aa39bbc9-9cb1-4c16-a26d-9f1d046f55ef",
+	},
+};
+
+export const NoElements = Template.bind({});
+
+NoElements.args = {
+	props: {
+		...AllElements.args.props,
+		initialSelectedElementsString: JSON.stringify({
+			query_configuration: [],
+		}),
+	},
+};
+
+export const PreviewErrors = Template.bind({});
+
+PreviewErrors.args = {
+	props: {
+		...AllElements.args.props,
+		initialSelectedElementsString: JSON.stringify({
+			query_configuration: [
+				SELECTED_ELEMENTS[3],
+				SELECTED_ELEMENTS[4],
+				SELECTED_ELEMENTS[5],
+				SELECTED_ELEMENTS[0],
+				SELECTED_ELEMENTS[1],
+				SELECTED_ELEMENTS[2],
+			],
+		}),
+		searchResultsURL:
+			"https://run.mocky.io/v3/177e9f6b-d921-4b92-9f64-c7eb684b8300",
+
+		// { "errors": [ { "className": "com.liferay.portal.search.tuning.blueprints.engine.internal.condition.visitor.InRangeVisitor", "elementId": "queryElement-0", "localizationKey": "core.error.clause-condition-date-parsing-error", "msg": "Illegal pattern character 'x'", "rootObject": { "evaluation_type": "in_range", "date_format": "yyyyMMddx", "parameter_name": "${time.current_date}", "value": [ 20210228, 20210302 ] }, "rootProperty": null, "rootValue": "[20210228,20210302]", "severity": "ERROR", "throwable": { "cause": null, "localizedMessage": "Illegal pattern character 'x'", "message": "Illegal pattern character 'x'" } } ] }
+	},
+};

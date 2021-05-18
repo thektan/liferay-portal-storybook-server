@@ -1,6 +1,6 @@
 import React from "react";
 
-import AddElementSidebar from "../../../liferay-portal-master/portal/modules/dxp/apps/portal-search-tuning/portal-search-tuning-blueprints-admin-web/src/main/resources/META-INF/resources/js/edit_blueprint/AddElementSidebar";
+import AddElementSidebar from "src/main/resources/META-INF/resources/js/edit_blueprint/AddElementSidebar";
 
 import {EditBlueprintDecorator} from "../decorators";
 import {SELECTED_ELEMENTS} from "../data";
