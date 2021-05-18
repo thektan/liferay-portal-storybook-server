@@ -21,6 +21,11 @@ module.exports = {
 		"@storybook/preset-scss",
 	],
 	webpackFinal: async (config) => {
+		config.resolve.modules = [
+			...(config.resolve.modules || []),
+			path.resolve(process.env.MODULE_PATH),
+		];
+
 		// Include module components to run babel on. Path from where the
 		// `yarn storybook` command is run.
 		config.module.rules[0].include.push(
