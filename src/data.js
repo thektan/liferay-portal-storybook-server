@@ -9,11 +9,11 @@
  * distribution rights of the Software.
  */
 
-import {QUERY_ELEMENTS} from "../../liferay-portal-master/portal/modules/dxp/apps/portal-search-tuning/portal-search-tuning-blueprints-admin-web/src/main/resources/META-INF/resources/js/utils/data";
+import {QUERY_ELEMENTS} from "src/main/resources/META-INF/resources/js/utils/data";
 import {
 	getElementOutput,
 	getUIConfigurationValues,
-} from "../../liferay-portal-master/portal/modules/dxp/apps/portal-search-tuning/portal-search-tuning-blueprints-admin-web/src/main/resources/META-INF/resources/js/utils/utils";
+} from "src/main/resources/META-INF/resources/js/utils/utils";
 
 export const ENTITY_JSON = {
 	"com.liferay.asset.kernel.model.AssetTag": {

@@ -29,6 +29,7 @@ module.exports = {
 	webpackFinal: async (config) => {
 		config.resolve.modules = [
 			...(config.resolve.modules || []),
+			path.resolve(process.env.PORTAL_NODE_MODULES),
 			path.resolve(process.env.MODULE_PATH),
 		];
 

@@ -11,7 +11,9 @@ const path = require("path");
  * Combine multiple Language.properties files to a single file for
  * liferay-lang-key-dev-loader to read from.
  */
-function compileLanguageProperties() {
+function buildLanguageProperties() {
+	console.log("Building .storybook/Language.properties");
+
 	const PORTAL_LANG_PATH = path.join(
 		process.env.PORTAL_PATH,
 		"/portal-impl/src/content/Language.properties"
@@ -21,6 +23,10 @@ function compileLanguageProperties() {
 		PORTAL_LANG_PATH,
 		...process.env.LANGUAGE_PATHS.split(","),
 	];
+
+	console.log(`Combining:`);
+
+	LANG_PATHS.forEach((path) => console.log(`- ${path}`));
 
 	const output = [];
 
@@ -40,4 +46,4 @@ function compileLanguageProperties() {
 	);
 }
 
-compileLanguageProperties();
+buildLanguageProperties();
