@@ -1,6 +1,7 @@
 import React from "react";
 
-import ErrorBoundary from "../../liferay-portal-master/portal/modules/dxp/apps/portal-search-tuning/portal-search-tuning-blueprints-admin-web/src/main/resources/META-INF/resources/js/shared/ErrorBoundary";
+import ClayLayout from "@clayui/layout";
+import ErrorBoundary from "src/main/resources/META-INF/resources/js/shared/ErrorBoundary";
 
 export const EditBlueprintDecorator = (Story) => (
 	<ErrorBoundary>
@@ -8,4 +9,16 @@ export const EditBlueprintDecorator = (Story) => (
 			<Story />
 		</div>
 	</ErrorBoundary>
+);
+
+export const BuilderDecorator = (Story) => (
+	<div className="builder">
+		<Story />
+	</div>
+);
+
+export const ContainerDecorator = (Story) => (
+	<ClayLayout.ContainerFluid size="md" view>
+		<Story />
+	</ClayLayout.ContainerFluid>
 );

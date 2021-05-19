@@ -5,7 +5,7 @@ import {EditBlueprintDecorator} from "../decorators";
 
 export default {
 	title: "Components/PageToolbar",
-	decorator: [EditBlueprintDecorator],
+	decorators: [EditBlueprintDecorator],
 	parameters: {
 		layout: "fullscreen",
 	},

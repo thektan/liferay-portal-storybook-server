@@ -3,7 +3,7 @@ import React from "react";
 import ClayIcon from "@clayui/icon";
 
 export default {
-	title: "Components/Icon Test",
+	title: "Test/Icon Test",
 	component: ClayIcon,
 };
 

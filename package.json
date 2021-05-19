@@ -102,11 +102,9 @@
 		"workbox-webpack-plugin": "5.1.4"
 	},
 	"scripts": {
-		"start": "node scripts/start.js",
-		"build": "node scripts/build.js",
-		"test": "node scripts/test.js",
-		"storybook": "start-storybook -p 9000 --static-dir static",
-		"build-storybook": "build-storybook"
+		"storybook": "yarn build-language-properties && start-storybook -p 9000 --static-dir static",
+		"build-storybook": "build-storybook",
+		"build-language-properties": "node scripts/build-language-properties.js"
 	},
 	"eslintConfig": {
 		"extends": [

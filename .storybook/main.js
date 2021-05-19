@@ -5,6 +5,12 @@
  * https://storybook.js.org/docs/react/configure/overview#configure-story-rendering
  */
 
+const dotenv = require("dotenv");
+const dotenvExpand = require("dotenv-expand");
+
+const myEnv = dotenv.config();
+dotenvExpand(myEnv);
+
 const path = require("path");
 const webpack = require("webpack");
 
