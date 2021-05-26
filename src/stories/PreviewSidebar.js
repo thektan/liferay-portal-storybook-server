@@ -105,3 +105,46 @@ Errors.args = {
 		],
 	},
 };
+
+export const Warning = Template.bind({});
+
+Warning.args = {
+	...Default.args,
+	results: {
+		...mockSearchResults(),
+		warnings: [{msg: "The configuration has missing or invalid values."}],
+	},
+};
+
+export const WarningsAndErrors = Template.bind({});
+
+WarningsAndErrors.args = {
+	...Default.args,
+	results: {
+		warnings: [{msg: "The configuration has missing or invalid values."}],
+		errors: [
+			{
+				className:
+					"com.liferay.portal.search.tuning.blueprints.engine.internal.searchrequest.QuerySearchRequestBodyContributor",
+				localizationKey: "core.error.unknown-clause-context",
+				msg:
+					"No enum constant com.liferay.portal.search.tuning.blueprints.constants.json.values.ClauseContext.QUERYS",
+				rootObject: {
+					context: "querys",
+					occur: "filter",
+					query: {},
+				},
+				rootProperty: null,
+				rootValue: "QUERYS",
+				severity: "ERROR",
+				throwable: {
+					cause: null,
+					localizedMessage:
+						"No enum constant com.liferay.portal.search.tuning.blueprints.constants.json.values.ClauseContext.QUERYS",
+					message:
+						"No enum constant com.liferay.portal.search.tuning.blueprints.constants.json.values.ClauseContext.QUERYS",
+				},
+			},
+		],
+	},
+};
