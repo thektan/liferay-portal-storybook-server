@@ -3,8 +3,8 @@ import React, {useState} from "react";
 import ClayButton from "@clayui/button";
 import {useModal} from "@clayui/modal";
 
-import SubmitWarningModal from "src/main/resources/META-INF/resources/js/edit_blueprint/SubmitWarningModal";
-import {PREVIEW_ERRORS} from "../data/preview-errors";
+import SubmitWarningModal from "src/main/resources/META-INF/resources/js/shared/SubmitWarningModal";
+import {BLUEPRINT_ERRORS} from "../data/errors";
 
 export default {
 	title: "Components/SubmitWarningModal",
@@ -12,14 +12,17 @@ export default {
 		layout: "fullscreen",
 	},
 	component: SubmitWarningModal,
-	argTypes: {onClose: {action: "onClose"}, onSubmit: {action: "onSubmit"}},
+	argTypes: {
+		onClose: {action: "onClose"},
+		onSubmit: {action: "onSubmit"},
+	},
+	args: {
+		visible: true,
+	},
 };
 
 const Template = (args) => {
 	const [visible, setVisible] = useState(false);
-	const {observer, onClose} = useModal({
-		onClose: () => setVisible(false),
-	});
 
 	return (
 		<>
@@ -27,13 +30,24 @@ const Template = (args) => {
 				{"Open Modal"}
 			</ClayButton>
 
-			{visible && (
-				<SubmitWarningModal
-					observer={observer}
-					onClose={onClose}
-					{...args}
-				/>
-			)}
+			<p style={{width: "500px"}}>
+				Reload the page or toggle the "visible" state to open the modal
+				again. Storybook has an issue with updating the "visible" state
+				when closing the modal where the overlay stays open. Will need
+				to look into if there's a way of handling internal states in a
+				storybook page.
+			</p>
+
+			<SubmitWarningModal
+				message={
+					"The blueprint configuration has errors that may cause unexpected results. Use the preview panel to review these errors."
+				}
+				onClose={() => {
+					setVisible(false);
+				}}
+				visible={visible}
+				{...args}
+			/>
 		</>
 	);
 };
@@ -42,7 +56,7 @@ function getErrors(amount) {
 	const errors = [];
 
 	for (let i = 0; i < amount; i++) {
-		errors.push(PREVIEW_ERRORS[0]);
+		errors.push(BLUEPRINT_ERRORS[0]);
 	}
 
 	return errors;
@@ -51,7 +65,7 @@ function getErrors(amount) {
 export const Default = Template.bind({});
 
 Default.args = {
-	errors: PREVIEW_ERRORS,
+	errors: BLUEPRINT_ERRORS,
 };
 
 export const ManyErrors = Template.bind({});
