@@ -16,6 +16,12 @@ export const parameters = {
 			date: /Date$/,
 		},
 	},
+	options: {
+		// https://storybook.js.org/docs/ember/writing-stories/naming-components-and-hierarchy
+		storySort: {
+			order: ["Pages", "Components"],
+		},
+	},
 };
 
 export const decorators = [
