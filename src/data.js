@@ -9,11 +9,13 @@
  * distribution rights of the Software.
  */
 
-import {QUERY_ELEMENTS} from "src/main/resources/META-INF/resources/js/utils/data";
+import TEXT_MATCH_OVER_MULTIPLE_FIELDS from "src/main/resources/META-INF/resources/js/utils/elements/text-match-over-multiple-fields";
 import {
 	getElementOutput,
 	getUIConfigurationValues,
 } from "src/main/resources/META-INF/resources/js/utils/utils";
+
+export const QUERY_ELEMENTS = [TEXT_MATCH_OVER_MULTIPLE_FIELDS];
 
 export const ENTITY_JSON = {
 	"com.liferay.asset.kernel.model.AssetTag": {

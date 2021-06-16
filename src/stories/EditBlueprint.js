@@ -70,14 +70,7 @@ PreviewErrors.args = {
 	props: {
 		...AllElements.args.props,
 		initialSelectedElementsString: JSON.stringify({
-			query_configuration: [
-				SELECTED_ELEMENTS[3],
-				SELECTED_ELEMENTS[4],
-				SELECTED_ELEMENTS[5],
-				SELECTED_ELEMENTS[0],
-				SELECTED_ELEMENTS[1],
-				SELECTED_ELEMENTS[2],
-			],
+			query_configuration: SELECTED_ELEMENTS,
 		}),
 		searchResultsURL:
 			"https://run.mocky.io/v3/177e9f6b-d921-4b92-9f64-c7eb684b8300",
