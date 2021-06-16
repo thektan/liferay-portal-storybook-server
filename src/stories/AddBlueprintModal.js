@@ -19,7 +19,7 @@ const Template = (args) => <AddBlueprintModal {...args} />;
 export const Default = Template.bind({});
 
 Default.args = {
-	contextPath: "/o/portal-search-tuning-blueprints-admin-web/",
+	contextPath: "/o/search-experiences-blueprints-admin-web/",
 	dialogTitle: "New Search Blueprint",
 	initialVisible: true,
 	searchableAssetTypesString: JSON.stringify(SEARCHABLE_ASSET_TYPES),

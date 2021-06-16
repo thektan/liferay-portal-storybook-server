@@ -1,6 +1,6 @@
 # Liferay Storybook Server
 
-Runs storybook to test components inside of a liferay-portal module. Currently setup to test components in `portal-search-tuning-blueprints-admin-web`.
+Runs storybook to test components inside of a liferay-portal module. Currently setup to test components in `search-experiences-blueprints-admin-web`.
 
 ## Setup
 
