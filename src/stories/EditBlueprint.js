@@ -9,6 +9,9 @@ import {
 	INITIAL_CONFIGURATION,
 	ELEMENT_OUTPUTS,
 	SELECTED_ELEMENTS,
+	KEYWORD_QUERY_CONTRIBUTORS,
+	MODEL_PREFILTER_CONTRIBUTORS,
+	QUERY_PREFILTER_CONTRIBUTORS,
 } from "../data";
 
 export default {
@@ -37,7 +40,10 @@ AllElements.args = {
 		initialTitle: {
 			"en-US": "Test Title",
 		},
+		keywordQueryContributors: KEYWORD_QUERY_CONTRIBUTORS,
+		modelPrefilterContributors: MODEL_PREFILTER_CONTRIBUTORS,
 		queryElements: SELECTED_ELEMENTS,
+		queryPrefilterContributors: QUERY_PREFILTER_CONTRIBUTORS,
 		redirectURL: "",
 		searchableAssetTypes: SEARCHABLE_ASSET_TYPES,
 		submitFormURL: "",

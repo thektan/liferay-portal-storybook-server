@@ -2,7 +2,12 @@ import React from "react";
 
 import AddBlueprintModal from "src/main/resources/META-INF/resources/js/view_blueprints/AddBlueprintModal";
 import {EditBlueprintDecorator} from "../decorators";
-import {SEARCHABLE_ASSET_TYPES} from "../data";
+import {
+	SEARCHABLE_ASSET_TYPES,
+	KEYWORD_QUERY_CONTRIBUTORS,
+	MODEL_PREFILTER_CONTRIBUTORS,
+	QUERY_PREFILTER_CONTRIBUTORS,
+} from "../data";
 
 export default {
 	title: "Components/AddBlueprintModal",
@@ -22,5 +27,12 @@ Default.args = {
 	contextPath: "/o/search-experiences-blueprints-admin-web/",
 	dialogTitle: "New Search Blueprint",
 	initialVisible: true,
+	keywordQueryContributorsString: JSON.stringify(KEYWORD_QUERY_CONTRIBUTORS),
+	modelPrefilterContributorsString: JSON.stringify(
+		MODEL_PREFILTER_CONTRIBUTORS
+	),
+	queryPrefilterContributorsString: JSON.stringify(
+		QUERY_PREFILTER_CONTRIBUTORS
+	),
 	searchableAssetTypesString: JSON.stringify(SEARCHABLE_ASSET_TYPES),
 };
