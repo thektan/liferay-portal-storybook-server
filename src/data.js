@@ -275,7 +275,9 @@ export const INITIAL_CONFIGURATION = {
 	facet_configuration: [],
 	framework_configuration: {
 		clause_contributors: {},
-		searchable_asset_types: [],
+		searchable_asset_types: SEARCHABLE_ASSET_TYPES.map(
+			(asset) => asset.className
+		),
 	},
 	highlight_configuration: {},
 	parameter_configuration: {},
