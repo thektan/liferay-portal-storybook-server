@@ -109,19 +109,71 @@ export const INDEX_FIELDS = [
 ];
 
 export const SEARCHABLE_ASSET_TYPES = [
-	"com.liferay.wiki.model.WikiPage",
-	"com.liferay.commerce.product.model.CPDefinition",
-	"com.liferay.document.library.kernel.model.DLFileEntry",
-	"com.liferay.bookmarks.model.BookmarksFolder",
-	"com.liferay.blogs.model.BlogsEntry",
-	"com.liferay.document.library.kernel.model.DLFolder",
-	"com.liferay.dynamic.data.lists.model.DDLRecord",
-	"com.liferay.bookmarks.model.BookmarksEntry",
-	"com.liferay.journal.model.JournalArticle",
-	"com.liferay.journal.model.JournalFolder",
-	"com.liferay.message.boards.model.MBMessage",
-	"com.liferay.calendar.model.CalendarBooking",
-	"com.liferay.knowledge.base.model.KBArticle",
+	{
+		className: "com.liferay.blogs.model.BlogsEntry",
+		displayName: "Blogs Entry",
+	},
+	{
+		className: "com.liferay.bookmarks.model.BookmarksEntry",
+		displayName: "Bookmarks Entry",
+	},
+	{
+		className: "com.liferay.bookmarks.model.BookmarksFolder",
+		displayName: "Bookmarks Folder",
+	},
+	{
+		className: "com.liferay.calendar.model.CalendarBooking",
+		displayName: "Calendar Event",
+	},
+	{
+		className: "com.liferay.commerce.product.model.CPDefinition",
+		displayName: "Commerce Product",
+	},
+	{
+		className: "com.liferay.document.library.kernel.model.DLFileEntry",
+		displayName: "Document",
+	},
+	{
+		className: "com.liferay.document.library.kernel.model.DLFolder",
+		displayName: "Documents Folder",
+	},
+	{
+		className: "com.liferay.dynamic.data.lists.model.DDLRecord",
+		displayName: "Dynamic Data Lists Record",
+	},
+	{
+		className:
+			"com.liferay.dynamic.data.mapping.model.DDMFormInstanceRecord",
+		displayName: "Form Record",
+	},
+	{
+		className: "com.liferay.knowledge.base.model.KBArticle",
+		displayName: "Knowledge Base Article",
+	},
+	{
+		className: "com.liferay.message.boards.model.MBMessage",
+		displayName: "Message Boards Message",
+	},
+	{
+		className: "com.liferay.portal.kernel.model.Layout",
+		displayName: "Page",
+	},
+	{
+		className: "com.liferay.portal.kernel.model.User",
+		displayName: "User",
+	},
+	{
+		className: "com.liferay.journal.model.JournalArticle",
+		displayName: "Web Content Article",
+	},
+	{
+		className: "com.liferay.journal.model.JournalFolder",
+		displayName: "Web Content Folder",
+	},
+	{
+		className: "com.liferay.wiki.model.WikiPage",
+		displayName: "Wiki Page",
+	},
 ];
 
 export const KEYWORD_QUERY_CONTRIBUTORS = [
@@ -223,7 +275,7 @@ export const INITIAL_CONFIGURATION = {
 	facet_configuration: [],
 	framework_configuration: {
 		clause_contributors: {},
-		searchable_asset_types: SEARCHABLE_ASSET_TYPES,
+		searchable_asset_types: [],
 	},
 	highlight_configuration: {},
 	parameter_configuration: {},

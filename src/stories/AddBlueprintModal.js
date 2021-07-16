@@ -34,5 +34,7 @@ Default.args = {
 	queryPrefilterContributorsString: JSON.stringify(
 		QUERY_PREFILTER_CONTRIBUTORS
 	),
-	searchableAssetTypesString: JSON.stringify(SEARCHABLE_ASSET_TYPES),
+	searchableAssetTypesString: JSON.stringify(
+		SEARCHABLE_ASSET_TYPES.map((asset) => asset.className)
+	),
 };
