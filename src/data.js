@@ -274,7 +274,15 @@ export const INITIAL_CONFIGURATION = {
 	aggregation_configuration: [],
 	facet_configuration: [],
 	framework_configuration: {
-		clause_contributors: {},
+		clause_contributors: {
+			excludes: [
+				"com.liferay.portal.workflow.kaleo.internal.search.spi.model.query.contributor.KaleoInstanceTokenKeywordQueryContributor",
+			],
+			includes: [
+				"com.liferay.portal.search.internal.spi.model.query.contributor.AlwaysPresentFieldsKeywordQueryContributor",
+				"com.liferay.account.internal.search.spi.model.query.contributor.AccountGroupKeywordQueryContributor",
+			],
+		},
 		searchable_asset_types: SEARCHABLE_ASSET_TYPES.map(
 			(asset) => asset.className
 		),
