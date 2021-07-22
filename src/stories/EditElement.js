@@ -66,3 +66,12 @@ Default.args = {
 		submitFormURL: "",
 	},
 };
+
+export const ReadOnly = Template.bind({});
+
+ReadOnly.args = {
+	props: {
+		...Default.args.props,
+		readOnly: true,
+	},
+};
