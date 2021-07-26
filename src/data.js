@@ -274,6 +274,7 @@ export const INITIAL_CONFIGURATION = {
 	aggregation_configuration: [],
 	facet_configuration: [],
 	framework_configuration: {
+		apply_indexer_clauses: true,
 		clause_contributors: {
 			excludes: [
 				"com.liferay.portal.workflow.kaleo.internal.search.spi.model.query.contributor.KaleoInstanceTokenKeywordQueryContributor",
