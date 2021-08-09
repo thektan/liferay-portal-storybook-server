@@ -35,7 +35,6 @@ AllElements.args = {
 		blueprintType: 0,
 		entityJSON: ENTITY_JSON,
 		indexFields: INDEX_FIELDS,
-		initialConfigurationString: JSON.stringify(INITIAL_CONFIGURATION),
 		initialDescription: {},
 		initialTitle: {
 			"en-US": "Test Title",
