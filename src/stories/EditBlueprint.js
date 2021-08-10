@@ -54,7 +54,7 @@ AllElements.args = {
 			query_configuration: SELECTED_ELEMENTS,
 		}),
 		searchResultsURL:
-			"https://run.mocky.io/v3/aa39bbc9-9cb1-4c16-a26d-9f1d046f55ef",
+			"https://run.mocky.io/v3/09252fff-57f3-4e74-b3d7-735ed2fcb96b",
 	},
 };
 
