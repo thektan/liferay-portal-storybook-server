@@ -10,12 +10,16 @@
  */
 
 import TEXT_MATCH_OVER_MULTIPLE_FIELDS from "src/main/resources/META-INF/resources/js/utils/elements/text-match-over-multiple-fields";
+import NULLABLE_TEST_ELEMENT from "./data/nullable-test-element";
 import {
 	getElementOutput,
 	getUIConfigurationValues,
 } from "src/main/resources/META-INF/resources/js/utils/utils";
 
-export const QUERY_ELEMENTS = [TEXT_MATCH_OVER_MULTIPLE_FIELDS];
+export const QUERY_ELEMENTS = [
+	TEXT_MATCH_OVER_MULTIPLE_FIELDS,
+	NULLABLE_TEST_ELEMENT,
+];
 
 export const ENTITY_JSON = {
 	"com.liferay.asset.kernel.model.AssetTag": {
