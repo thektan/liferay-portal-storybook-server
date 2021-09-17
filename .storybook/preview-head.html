@@ -1,3 +1,14 @@
 <script>
-	var Liferay = {ThemeDisplay: {getDefaultLanguageId: () => "en_US"}};
+	var Liferay = {
+		ThemeDisplay: {getDefaultLanguageId: () => "en_US"},
+		Util: {
+			sub: (key, ...values) => {
+				return values.reduce(
+					(acc, value, i) =>
+						acc.replace(new RegExp(`{[${i}]}`), value),
+					key
+				);
+			},
+		},
+	};
 </script>
