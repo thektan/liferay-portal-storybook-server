@@ -3,7 +3,7 @@ import React from "react";
 import AddBlueprintModal from "src/main/resources/META-INF/resources/js/view_blueprints/AddBlueprintModal";
 import {EditBlueprintDecorator} from "../decorators";
 import {
-	SEARCHABLE_ASSET_TYPES,
+	SEARCHABLE_TYPES,
 	KEYWORD_QUERY_CONTRIBUTORS,
 	MODEL_PREFILTER_CONTRIBUTORS,
 	QUERY_PREFILTER_CONTRIBUTORS,
@@ -34,7 +34,7 @@ Default.args = {
 	queryPrefilterContributorsString: JSON.stringify(
 		QUERY_PREFILTER_CONTRIBUTORS
 	),
-	searchableAssetTypesString: JSON.stringify(
-		SEARCHABLE_ASSET_TYPES.map((asset) => asset.className)
+	searchableTypesString: JSON.stringify(
+		SEARCHABLE_TYPES.map(({className}) => className)
 	),
 };

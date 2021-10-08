@@ -5,7 +5,7 @@ import CONTEXT from "../context";
 import {
 	ENTITY_JSON,
 	INDEX_FIELDS,
-	SEARCHABLE_ASSET_TYPES,
+	SEARCHABLE_TYPES,
 	INITIAL_CONFIGURATION,
 	ELEMENT_OUTPUTS,
 	SELECTED_ELEMENTS,
@@ -44,7 +44,7 @@ AllElements.args = {
 		queryElements: SELECTED_ELEMENTS,
 		queryPrefilterContributors: QUERY_PREFILTER_CONTRIBUTORS,
 		redirectURL: "",
-		searchableAssetTypes: SEARCHABLE_ASSET_TYPES,
+		searchableTypes: SEARCHABLE_TYPES,
 		submitFormURL: "",
 		initialConfigurationString: JSON.stringify({
 			...INITIAL_CONFIGURATION,

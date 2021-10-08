@@ -112,7 +112,7 @@ export const INDEX_FIELDS = [
 	},
 ];
 
-export const SEARCHABLE_ASSET_TYPES = [
+export const SEARCHABLE_TYPES = [
 	{
 		className: "com.liferay.blogs.model.BlogsEntry",
 		displayName: "Blogs Entry",
@@ -288,8 +288,8 @@ export const INITIAL_CONFIGURATION = {
 				"com.liferay.account.internal.search.spi.model.query.contributor.AccountGroupKeywordQueryContributor",
 			],
 		},
-		searchable_asset_types: SEARCHABLE_ASSET_TYPES.map(
-			(asset) => asset.className
+		searchable_asset_types: SEARCHABLE_TYPES.map(
+			({className}) => className
 		),
 	},
 	highlight_configuration: {},
