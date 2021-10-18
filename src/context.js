@@ -6,7 +6,7 @@ export default {
 		nl_NL: "Dutch (Netherlands)",
 		zh_CN: "Chinese (China)",
 	},
-	contextPath: "/o/search-experiences-blueprints-admin-web",
+	contextPath: "/o/search-experiences-web",
 	defaultLocale: "en_US",
 	locale: "en_US",
 	namespace:

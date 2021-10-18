@@ -9,16 +9,16 @@
  * distribution rights of the Software.
  */
 
-import TEXT_MATCH_OVER_MULTIPLE_FIELDS from "src/main/resources/META-INF/resources/js/utils/elements/text-match-over-multiple-fields";
-import NULLABLE_TEST_ELEMENT from "./data/nullable-test-element";
+import TEXT_MATCH_OVER_MULTIPLE_FIELDS from "src/main/resources/META-INF/resources/js/utils/sxp_elements/text-match-over-multiple-fields";
+import NULLABLE_TEST_SXP_ELEMENT from "./data/nullable-test-element";
 import {
-	getElementOutput,
+	getSXPElementOutput,
 	getUIConfigurationValues,
 } from "src/main/resources/META-INF/resources/js/utils/utils";
 
-export const QUERY_ELEMENTS = [
+export const QUERY_SXP_ELEMENTS = [
 	TEXT_MATCH_OVER_MULTIPLE_FIELDS,
-	NULLABLE_TEST_ELEMENT,
+	NULLABLE_TEST_SXP_ELEMENT,
 ];
 
 export const ENTITY_JSON = {
@@ -253,15 +253,19 @@ export const QUERY_PREFILTER_CONTRIBUTORS = [
 	"com.liferay.portal.search.internal.spi.model.query.contributor.UserIdQueryPreFilterContributor",
 ];
 
-export const SELECTED_ELEMENTS = QUERY_ELEMENTS.map((element, index) => ({
-	...element,
-	id: index,
-	uiConfigurationValues: getUIConfigurationValues(
-		element.uiConfigurationJSON
-	),
-}));
+export const SELECTED_SXP_ELEMENTS = QUERY_SXP_ELEMENTS.map(
+	(element, index) => ({
+		...element,
+		id: index,
+		uiConfigurationValues: getUIConfigurationValues(
+			element.uiConfigurationJSON
+		),
+	})
+);
 
-export const ELEMENT_OUTPUTS = SELECTED_ELEMENTS.map(getElementOutput);
+export const SXP_ELEMENT_OUTPUTS = SELECTED_SXP_ELEMENTS.map(
+	getSXPElementOutput
+);
 
 export const INITIAL_CONFIGURATION = {
 	advanced_configuration: {

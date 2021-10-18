@@ -4,7 +4,7 @@ import ClayButton from "@clayui/button";
 import {useModal} from "@clayui/modal";
 
 import SubmitWarningModal from "src/main/resources/META-INF/resources/js/shared/SubmitWarningModal";
-import {BLUEPRINT_ERRORS} from "../data/errors";
+import {SXP_BLUEPRINT_ERRORS} from "../data/errors";
 
 export default {
 	title: "Components/SubmitWarningModal",
@@ -56,7 +56,7 @@ function getErrors(amount) {
 	const errors = [];
 
 	for (let i = 0; i < amount; i++) {
-		errors.push(BLUEPRINT_ERRORS[0]);
+		errors.push(SXP_BLUEPRINT_ERRORS[0]);
 	}
 
 	return errors;
@@ -65,7 +65,7 @@ function getErrors(amount) {
 export const Default = Template.bind({});
 
 Default.args = {
-	errors: BLUEPRINT_ERRORS,
+	errors: SXP_BLUEPRINT_ERRORS,
 };
 
 export const ManyErrors = Template.bind({});

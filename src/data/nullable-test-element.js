@@ -10,7 +10,7 @@
  */
 
 export default {
-	elementTemplateJSON: {
+	sxpElementTemplateJSON: {
 		clauses: [
 			{
 				occur: "should",

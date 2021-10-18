@@ -1,26 +1,26 @@
 import React from "react";
 
-import AddElementSidebar from "src/main/resources/META-INF/resources/js/edit_blueprint/AddElementSidebar";
+import AddSXPElementSidebar from "src/main/resources/META-INF/resources/js/edit_sxp_blueprint/AddSXPElementSidebar";
 
 import {EditBlueprintDecorator} from "../decorators";
-import {SELECTED_ELEMENTS} from "../data";
+import {SELECTED_SXP_ELEMENTS} from "../data";
 
 export default {
-	title: "Components/AddElementSidebar",
-	component: AddElementSidebar,
+	title: "Components/AddSXPElementSidebar",
+	component: AddSXPElementSidebar,
 	decorators: [EditBlueprintDecorator],
 	argTypes: {
 		onAddElement: {action: "add element"},
 		onClose: {action: "close"},
 	},
 	args: {
-		elements: SELECTED_ELEMENTS,
 		emptyMessage: "No query elements found",
+		sxpElements: SELECTED_SXP_ELEMENTS,
 		title: "Add Element",
 		visible: true,
 	},
 };
 
-const Template = (args) => <AddElementSidebar {...args} />;
+const Template = (args) => <AddSXPElementSidebar {...args} />;
 
 export const Default = Template.bind({});

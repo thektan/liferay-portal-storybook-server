@@ -26,7 +26,7 @@ export const parameters = {
 
 export const decorators = [
 	(Story) => (
-		<div className="portlet-blueprints-admin">
+		<div className="portlet-sxp-blueprints-admin">
 			<ClayIconSpriteContext.Provider value={SPRITEMAP_PATH}>
 				<Story />
 			</ClayIconSpriteContext.Provider>

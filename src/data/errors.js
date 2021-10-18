@@ -1,4 +1,4 @@
-export const BLUEPRINT_ERRORS = [
+export const SXP_BLUEPRINT_ERRORS = [
 	{
 		msg: "expected type: Number, found: String",
 		rootProperty:
@@ -35,25 +35,25 @@ export const BLUEPRINT_ERRORS = [
 	},
 ];
 
-export const ELEMENT_ERRORS = [
+export const SXP_ELEMENT_ERRORS = [
 	{
 		msg: "expected type: String, found: Integer",
-		rootProperty: "/query_element/elementTemplateJSON/clauses/0/occur",
+		rootProperty: "/query_element/sxpElementTemplateJSON/clauses/0/occur",
 		severity: "ERROR",
 		localizedMessage: "Invalid value type",
 		throwable:
-			"org.everit.json.schema.ValidationException: #/query_element/elementTemplateJSON/clauses/0/occur: expected type: String, found: Integer",
+			"org.everit.json.schema.ValidationException: #/query_element/sxpElementTemplateJSON/clauses/0/occur: expected type: String, found: Integer",
 		className:
 			"com.liferay.portal.search.tuning.blueprints.internal.validator.ElementValidatorImpl",
 		rootConfiguration: "query_element",
 	},
 	{
 		msg: "expected type: String, found: Integer",
-		rootProperty: "/query_element/elementTemplateJSON/clauses/0/context",
+		rootProperty: "/query_element/sxpElementTemplateJSON/clauses/0/context",
 		severity: "ERROR",
 		localizedMessage: "Invalid value type",
 		throwable:
-			"org.everit.json.schema.ValidationException: #/query_element/elementTemplateJSON/clauses/0/context: expected type: String, found: Integer",
+			"org.everit.json.schema.ValidationException: #/query_element/sxpElementTemplateJSON/clauses/0/context: expected type: String, found: Integer",
 		className:
 			"com.liferay.portal.search.tuning.blueprints.internal.validator.ElementValidatorImpl",
 		rootConfiguration: "query_element",
@@ -61,11 +61,11 @@ export const ELEMENT_ERRORS = [
 	{
 		msg:
 			'1 is not a valid enum value. Expected value is ["post_filter","query","rescore"]',
-		rootProperty: "/query_element/elementTemplateJSON/clauses/0/context",
+		rootProperty: "/query_element/sxpElementTemplateJSON/clauses/0/context",
 		severity: "ERROR",
 		localizedMessage: "Invalid value",
 		throwable:
-			"org.everit.json.schema.ValidationException: #/query_element/elementTemplateJSON/clauses/0/context: 1 is not a valid enum value",
+			"org.everit.json.schema.ValidationException: #/query_element/sxpElementTemplateJSON/clauses/0/context: 1 is not a valid enum value",
 		className:
 			"com.liferay.portal.search.tuning.blueprints.internal.validator.ElementValidatorImpl",
 		rootConfiguration: "query_element",
