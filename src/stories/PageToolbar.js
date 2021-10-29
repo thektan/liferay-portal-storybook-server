@@ -1,6 +1,6 @@
 import React from "react";
 
-import PageToolbar from "src/main/resources/META-INF/resources/js/shared/PageToolbar";
+import PageToolbar from "src/main/resources/META-INF/resources/sxp_blueprint_admin/js/shared/PageToolbar";
 import {EditBlueprintDecorator} from "../decorators";
 
 export default {

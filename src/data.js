@@ -9,12 +9,12 @@
  * distribution rights of the Software.
  */
 
-import TEXT_MATCH_OVER_MULTIPLE_FIELDS from "src/main/resources/META-INF/resources/js/utils/sxp_elements/text-match-over-multiple-fields";
+import TEXT_MATCH_OVER_MULTIPLE_FIELDS from "src/main/resources/META-INF/resources/sxp_blueprint_admin/js/sxp_elements/textMatchOverMultipleFields";
 import NULLABLE_TEST_SXP_ELEMENT from "./data/nullable-test-element";
 import {
 	getSXPElementOutput,
 	getUIConfigurationValues,
-} from "src/main/resources/META-INF/resources/js/utils/utils";
+} from "src/main/resources/META-INF/resources/sxp_blueprint_admin/js/utils/utils";
 
 export const QUERY_SXP_ELEMENTS = [
 	TEXT_MATCH_OVER_MULTIPLE_FIELDS,

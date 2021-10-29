@@ -1,6 +1,6 @@
 import React from "react";
 
-import SearchInput from "src/main/resources/META-INF/resources/js/shared/SearchInput";
+import SearchInput from "src/main/resources/META-INF/resources/sxp_blueprint_admin/js/shared/SearchInput";
 
 export default {
 	title: "Components/SearchInput",

@@ -1,6 +1,6 @@
 import React from "react";
 
-import EditSXPBlueprintForm from "src/main/resources/META-INF/resources/js/edit_sxp_blueprint/EditSXPBlueprintForm";
+import EditSXPBlueprintForm from "src/main/resources/META-INF/resources/sxp_blueprint_admin/js/edit_sxp_blueprint/EditSXPBlueprintForm";
 import CONTEXT from "../context";
 import {
 	ENTITY_JSON,

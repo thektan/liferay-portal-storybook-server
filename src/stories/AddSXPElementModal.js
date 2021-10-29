@@ -1,6 +1,6 @@
 import React from "react";
 
-import AddSXPElementModal from "src/main/resources/META-INF/resources/js/view_sxp_elements/AddSXPElementModal";
+import AddSXPElementModal from "src/main/resources/META-INF/resources/sxp_blueprint_admin/js/view_sxp_elements/AddSXPElementModal";
 import {EditBlueprintDecorator} from "../decorators";
 
 export default {

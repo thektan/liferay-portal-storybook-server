@@ -1,7 +1,7 @@
 import React from "react";
 
 import ClayLayout from "@clayui/layout";
-import ErrorBoundary from "src/main/resources/META-INF/resources/js/shared/ErrorBoundary";
+import ErrorBoundary from "src/main/resources/META-INF/resources/sxp_blueprint_admin/js/shared/ErrorBoundary";
 
 export const EditBlueprintDecorator = (Story) => (
 	<ErrorBoundary>

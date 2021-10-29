@@ -1,8 +1,8 @@
 import React from "react";
 
-import EditSXPElementForm from "src/main/resources/META-INF/resources/js/edit_sxp_element/EditSXPElementForm";
+import EditSXPElementForm from "src/main/resources/META-INF/resources/sxp_blueprint_admin/js/edit_sxp_element/EditSXPElementForm";
 import CONTEXT from "../context";
-import {DEFAULT_EDIT_SXP_ELEMENT} from "src/main/resources/META-INF/resources/js/utils/data";
+import {DEFAULT_EDIT_SXP_ELEMENT} from "src/main/resources/META-INF/resources/sxp_blueprint_admin/js/utils/data";
 
 export default {
 	title: "Components/EditSXPElementForm",

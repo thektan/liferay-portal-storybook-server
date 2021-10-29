@@ -1,6 +1,6 @@
 import React from "react";
 
-import SXPElement from "src/main/resources/META-INF/resources/js/shared/sxp_element";
+import SXPElement from "src/main/resources/META-INF/resources/sxp_blueprint_admin/js/shared/sxp_element";
 import {
 	BuilderDecorator,
 	ContainerDecorator,

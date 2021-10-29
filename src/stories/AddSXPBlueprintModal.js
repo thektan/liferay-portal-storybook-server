@@ -1,6 +1,6 @@
 import React from "react";
 
-import AddSXPBlueprintModal from "src/main/resources/META-INF/resources/js/view_sxp_blueprints/AddSXPBlueprintModal";
+import AddSXPBlueprintModal from "src/main/resources/META-INF/resources/sxp_blueprint_admin/js/view_sxp_blueprints/AddSXPBlueprintModal";
 import {EditBlueprintDecorator} from "../decorators";
 
 export default {

@@ -1,6 +1,6 @@
 import React from "react";
 
-import AddSXPElementSidebar from "src/main/resources/META-INF/resources/js/edit_sxp_blueprint/AddSXPElementSidebar";
+import AddSXPElementSidebar from "src/main/resources/META-INF/resources/sxp_blueprint_admin/js/edit_sxp_blueprint/AddSXPElementSidebar";
 
 import {EditBlueprintDecorator} from "../decorators";
 import {SELECTED_SXP_ELEMENTS} from "../data";

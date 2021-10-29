@@ -3,7 +3,7 @@ import React, {useState} from "react";
 import ClayButton from "@clayui/button";
 import {useModal} from "@clayui/modal";
 
-import SubmitWarningModal from "src/main/resources/META-INF/resources/js/shared/SubmitWarningModal";
+import SubmitWarningModal from "src/main/resources/META-INF/resources/sxp_blueprint_admin/js/shared/SubmitWarningModal";
 import {SXP_BLUEPRINT_ERRORS} from "../data/errors";
 
 export default {

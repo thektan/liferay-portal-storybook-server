@@ -1,6 +1,9 @@
 <script>
 	var Liferay = {
-		ThemeDisplay: {getDefaultLanguageId: () => "en_US"},
+		ThemeDisplay: {
+			getDefaultLanguageId: () => "en_US",
+			getCompanyId: () => "0",
+		},
 		Util: {
 			sub: (key, ...values) => {
 				return values.reduce(

@@ -1,6 +1,6 @@
 import React from "react";
 
-import EditSXPElement from "src/main/resources/META-INF/resources/js/edit_sxp_element/index";
+import EditSXPElement from "src/main/resources/META-INF/resources/sxp_blueprint_admin/js/edit_sxp_element/index";
 import CONTEXT from "../context";
 
 export default {

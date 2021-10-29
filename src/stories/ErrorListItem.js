@@ -1,6 +1,6 @@
 import React from "react";
 
-import ErrorListItem from "src/main/resources/META-INF/resources/js/shared/ErrorListItem";
+import ErrorListItem from "src/main/resources/META-INF/resources/sxp_blueprint_admin/js/shared/ErrorListItem";
 import {SXP_BLUEPRINT_ERRORS, SXP_ELEMENT_ERRORS} from "../data/errors";
 
 export default {
