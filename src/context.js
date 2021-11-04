@@ -11,5 +11,8 @@ export default {
 	locale: "en_US",
 	namespace:
 		"_com_liferay_search_experiences_search_configuration_web_internal_portlet_SearchConfigurationAdminPortlet_",
+	redirectURL: "",
 	spritemap: process.env.SPRITEMAP_PATH,
+	sxpBlueprintId: "",
+	sxpElementId: "",
 };
