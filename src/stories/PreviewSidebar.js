@@ -2,7 +2,7 @@ import React from "react";
 
 import PreviewSidebar from "src/main/resources/META-INF/resources/sxp_blueprint_admin/js/edit_sxp_blueprint/PreviewSidebar";
 import {EditBlueprintDecorator} from "../decorators";
-import {mockSearchResults} from "../data";
+import {mockSearchResults} from "src/../test/js/mocks/data";
 
 export default {
 	title: "Components/PreviewSidebar",
@@ -27,15 +27,7 @@ export const Empty = Template.bind({});
 
 Empty.args = {
 	...Default.args,
-	results: {
-		hits: [],
-		meta: {
-			executionTime: "0.061",
-			keywords: "test",
-			totalHits: 0,
-		},
-		pagination: {activePage: 1, totalPages: 1},
-	},
+	results: mockSearchResults(0),
 };
 
 export const Errors = Template.bind({});

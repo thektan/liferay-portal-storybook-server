@@ -2,17 +2,8 @@ import React from "react";
 
 import EditSXPBlueprintForm from "src/main/resources/META-INF/resources/sxp_blueprint_admin/js/edit_sxp_blueprint/EditSXPBlueprintForm";
 import CONTEXT from "../context";
-import {
-	ENTITY_JSON,
-	INDEX_FIELDS,
-	SEARCHABLE_TYPES,
-	INITIAL_CONFIGURATION,
-	SXP_ELEMENT_OUTPUTS,
-	SELECTED_SXP_ELEMENTS,
-	KEYWORD_QUERY_CONTRIBUTORS,
-	MODEL_PREFILTER_CONTRIBUTORS,
-	QUERY_PREFILTER_CONTRIBUTORS,
-} from "../data";
+import {ENTITY_JSON, INDEX_FIELDS, INITIAL_CONFIGURATION} from "../data";
+import {SELECTED_SXP_ELEMENTS} from "src/../test/js/mocks/data";
 
 export default {
 	title: "Components/EditSXPBlueprintForm",
@@ -37,31 +28,23 @@ AllElements.args = {
 	sxpBlueprintId: "1",
 	entityJSON: ENTITY_JSON,
 	indexFields: INDEX_FIELDS,
-	initialDescription: {},
+	initialDescription: {
+		"en-US": "Test Description",
+	},
 	initialTitle: {
 		"en-US": "Test Title",
 	},
-	keywordQueryContributors: KEYWORD_QUERY_CONTRIBUTORS,
-	modelPrefilterContributors: MODEL_PREFILTER_CONTRIBUTORS,
-	querySXPElements: SELECTED_SXP_ELEMENTS,
-	queryPrefilterContributors: QUERY_PREFILTER_CONTRIBUTORS,
-	redirectURL: "",
-	searchableTypes: SEARCHABLE_TYPES,
-	submitFormURL: "",
-	initialConfigurationString: JSON.stringify({
-		...INITIAL_CONFIGURATION,
-		query_configuration: SXP_ELEMENT_OUTPUTS,
-	}),
-	initialSelectedSXPElementsString: JSON.stringify({
-		query_configuration: SELECTED_SXP_ELEMENTS,
-	}),
+	initialConfiguration: INITIAL_CONFIGURATION,
+	initialSXPElementInstances: {
+		queryConfiguration: {queryEntries: SELECTED_SXP_ELEMENTS},
+	},
 };
 
 export const NoElements = Template.bind({});
 
 NoElements.args = {
 	...AllElements.args,
-	initialSelectedSXPElementsString: JSON.stringify({
-		query_configuration: [],
-	}),
+	initialSXPElementInstances: {
+		queryConfiguration: {queryEntries: []},
+	},
 };

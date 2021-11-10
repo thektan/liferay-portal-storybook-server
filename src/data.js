@@ -9,17 +9,8 @@
  * distribution rights of the Software.
  */
 
-import TEXT_MATCH_OVER_MULTIPLE_FIELDS from "src/main/resources/META-INF/resources/sxp_blueprint_admin/js/sxp_elements/textMatchOverMultipleFields";
-import NULLABLE_TEST_SXP_ELEMENT from "./data/nullable-test-element";
-import {
-	getSXPElementOutput,
-	getUIConfigurationValues,
-} from "src/main/resources/META-INF/resources/sxp_blueprint_admin/js/utils/utils";
-
-export const QUERY_SXP_ELEMENTS = [
-	TEXT_MATCH_OVER_MULTIPLE_FIELDS,
-	NULLABLE_TEST_SXP_ELEMENT,
-];
+import {SELECTED_SXP_ELEMENTS} from "src/../test/js/mocks/data";
+import {getSXPElementOutput} from "src/main/resources/META-INF/resources/sxp_blueprint_admin/js/utils/utils";
 
 export const ENTITY_JSON = {
 	"com.liferay.asset.kernel.model.AssetTag": {
@@ -253,85 +244,25 @@ export const QUERY_PREFILTER_CONTRIBUTORS = [
 	"com.liferay.portal.search.internal.spi.model.query.contributor.UserIdQueryPreFilterContributor",
 ];
 
-export const SELECTED_SXP_ELEMENTS = QUERY_SXP_ELEMENTS.map(
-	(element, index) => ({
-		...element,
-		id: index,
-		uiConfigurationValues: getUIConfigurationValues(
-			element.uiConfigurationJSON
-		),
-	})
-);
-
-export const SXP_ELEMENT_OUTPUTS = SELECTED_SXP_ELEMENTS.map(
-	getSXPElementOutput
-);
-
 export const INITIAL_CONFIGURATION = {
-	advanced_configuration: {
-		query_processing: {
-			exclude_query_contributors: [],
-			exclude_query_post_processors: [],
-		},
-		source: {
-			fetch_source: true,
-			source_excludes: [],
-			source_includes: [],
-		},
+	advanced: {},
+	aggregationConfiguration: {},
+	facet: {},
+	general: {
+		clauseContributorsExcludes: [
+			"com.liferay.portal.workflow.kaleo.internal.search.spi.model.query.contributor.KaleoInstanceTokenKeywordQueryContributor",
+		],
+		clauseContributorsIncludes: [
+			"com.liferay.portal.search.internal.spi.model.query.contributor.AlwaysPresentFieldsKeywordQueryContributor",
+			"com.liferay.account.internal.search.spi.model.query.contributor.AccountGroupKeywordQueryContributor",
+		],
+		searchableAssetTypes: SEARCHABLE_TYPES.map(({className}) => className),
 	},
-	aggregation_configuration: [],
-	facet_configuration: [],
-	framework_configuration: {
-		apply_indexer_clauses: true,
-		clause_contributors: {
-			excludes: [
-				"com.liferay.portal.workflow.kaleo.internal.search.spi.model.query.contributor.KaleoInstanceTokenKeywordQueryContributor",
-			],
-			includes: [
-				"com.liferay.portal.search.internal.spi.model.query.contributor.AlwaysPresentFieldsKeywordQueryContributor",
-				"com.liferay.account.internal.search.spi.model.query.contributor.AccountGroupKeywordQueryContributor",
-			],
-		},
-		searchable_asset_types: SEARCHABLE_TYPES.map(
-			({className}) => className
-		),
+	highlight: {},
+	parameters: {},
+	queryConfiguration: {
+		applyIndexerClauses: true,
+		queryEntries: SELECTED_SXP_ELEMENTS.map(getSXPElementOutput),
 	},
-	highlight_configuration: {},
-	parameter_configuration: {},
-	query_configuration: [],
-	sort_configuration: {},
-};
-
-export const mockSearchResults = (itemsPerPage = 10) => {
-	const hits = [];
-
-	for (var i = 1; i <= itemsPerPage; i++) {
-		hits.push({
-			b_assetEntryId: i,
-			b_author: "Test Test",
-			b_created: "2/1/21",
-			b_modified: "2/1/21",
-			b_summary:
-				"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-			b_title: `Article Number ${i}`,
-			b_type: "Web Content Article",
-			b_viewURL: "",
-			document: {},
-			id: `com.liferay.journal.model.JournalArticle_PORTLET_${i}`,
-			score: Math.random() * 100,
-		});
-	}
-
-	return {
-		aggregations: {},
-		facets: [],
-		hits,
-		meta: {
-			executionTime: "0.061",
-			keywords: "test",
-			totalHits: 1362,
-		},
-		pagination: {activePage: 1, totalPages: 100},
-		suggest: {},
-	};
+	sortConfiguration: {},
 };

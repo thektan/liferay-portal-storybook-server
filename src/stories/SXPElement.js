@@ -6,7 +6,7 @@ import {
 	ContainerDecorator,
 	EditBlueprintDecorator,
 } from "../decorators";
-import {SELECTED_SXP_ELEMENTS} from "../data";
+import {SELECTED_SXP_ELEMENTS} from "src/../test/js/mocks/data";
 
 export default {
 	title: "Components/SXPElement",

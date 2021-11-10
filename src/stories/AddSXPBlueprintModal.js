@@ -22,4 +22,5 @@ Default.args = {
 	dialogTitle: "New Search Blueprint",
 	defaultLocale: "en_US",
 	namespace: "",
+	redirectURL: "",
 };

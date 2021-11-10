@@ -9,9 +9,7 @@ export default {
 	parameters: {
 		layout: "fullscreen",
 	},
-	args: {
-		context: CONTEXT,
-	},
+	args: CONTEXT,
 };
 
 const Template = (args) => (
