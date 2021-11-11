@@ -9,14 +9,12 @@ export default {
 	parameters: {
 		layout: "fullscreen",
 	},
-	args: {
-		context: CONTEXT,
-	},
+	args: CONTEXT,
 };
 
 const Template = (args) => (
 	<div className="edit-sxp-blueprint-root">
-		<EditSXPBlueprint {...args} />
+		<EditSXPBlueprint sxpBlueprintId="" {...args} />
 	</div>
 );
 
