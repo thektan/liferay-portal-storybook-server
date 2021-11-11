@@ -5,7 +5,6 @@ import CONTEXT from "../context";
 import {
 	ENTITY_JSON,
 	INITIAL_CONFIGURATION,
-	INDEX_FIELDS,
 	SELECTED_SXP_ELEMENTS,
 } from "../data";
 
@@ -31,7 +30,6 @@ export const AllElements = Template.bind({});
 AllElements.args = {
 	sxpBlueprintId: "1",
 	entityJSON: ENTITY_JSON,
-	indexFields: INDEX_FIELDS,
 	initialDescription: {
 		"en-US": "Test Description",
 	},
