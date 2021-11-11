@@ -32,38 +32,28 @@ Default.args = {
 	},
 	predefinedVariables: [
 		{
-			categoryName: "User",
-			parameterDefinitions: [
-				{
-					className:
-						"com.liferay.portal.search.tuning.blueprints.engine.parameter.StringParameter",
-					description: "User's ID",
-					variable: "${user.user_id}",
-				},
-				{
-					className:
-						"com.liferay.portal.search.tuning.blueprints.engine.parameter.StringParameter",
-					description: "User's First Name",
-					variable: "${user.user_first_name}",
-				},
-			],
+			className:
+				"com.liferay.portal.search.tuning.blueprints.engine.parameter.StringParameter",
+			description: "User's ID",
+			templateVariable: "${user.user_id}",
 		},
 		{
-			categoryName: "Context",
-			parameterDefinitions: [
-				{
-					className:
-						"com.liferay.portal.search.tuning.blueprints.engine.parameter.LongParameter",
-					description: "Company ID",
-					variable: "${context.company_id}",
-				},
-				{
-					className:
-						"com.liferay.portal.search.tuning.blueprints.engine.parameter.LongParameter",
-					description: "Scope Group ID",
-					variable: "${context.scope_group_id}",
-				},
-			],
+			className:
+				"com.liferay.portal.search.tuning.blueprints.engine.parameter.StringParameter",
+			description: "User's First Name",
+			templateVariable: "${user.user_first_name}",
+		},
+		{
+			className:
+				"com.liferay.portal.search.tuning.blueprints.engine.parameter.LongParameter",
+			description: "Company ID",
+			templateVariable: "${context.company_id}",
+		},
+		{
+			className:
+				"com.liferay.portal.search.tuning.blueprints.engine.parameter.LongParameter",
+			description: "Scope Group ID",
+			templateVariable: "${context.scope_group_id}",
 		},
 	],
 	redirectURL: "",
