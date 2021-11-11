@@ -2,8 +2,12 @@ import React from "react";
 
 import EditSXPBlueprintForm from "src/main/resources/META-INF/resources/sxp_blueprint_admin/js/edit_sxp_blueprint/EditSXPBlueprintForm";
 import CONTEXT from "../context";
-import {ENTITY_JSON, INDEX_FIELDS, INITIAL_CONFIGURATION} from "../data";
-import {SELECTED_SXP_ELEMENTS} from "src/../test/js/mocks/data";
+import {
+	ENTITY_JSON,
+	INITIAL_CONFIGURATION,
+	INDEX_FIELDS,
+	SELECTED_SXP_ELEMENTS,
+} from "../data";
 
 export default {
 	title: "Components/EditSXPBlueprintForm",

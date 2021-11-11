@@ -9,8 +9,12 @@
  * distribution rights of the Software.
  */
 
-import {SELECTED_SXP_ELEMENTS} from "src/../test/js/mocks/data";
-import {getSXPElementOutput} from "src/main/resources/META-INF/resources/sxp_blueprint_admin/js/utils/utils";
+import boostAllKeywordsMatch from "src/main/resources/META-INF/resources/sxp_blueprint_admin/js/sxp_elements/boostAllKeywordsMatch";
+import pasteAnyElasticsearchQuery from "src/main/resources/META-INF/resources/sxp_blueprint_admin/js/sxp_elements/pasteAnyElasticsearchQuery";
+import {
+	getSXPElementOutput,
+	getSXPBlueprintForm,
+} from "src/main/resources/META-INF/resources/sxp_blueprint_admin/js/utils/utils";
 
 export const ENTITY_JSON = {
 	"com.liferay.asset.kernel.model.AssetTag": {
@@ -243,6 +247,11 @@ export const QUERY_PREFILTER_CONTRIBUTORS = [
 	"com.liferay.portal.search.internal.spi.model.query.contributor.LayoutQueryPreFilterContributor",
 	"com.liferay.portal.search.internal.spi.model.query.contributor.UserIdQueryPreFilterContributor",
 ];
+
+export const SELECTED_SXP_ELEMENTS = [
+	boostAllKeywordsMatch,
+	pasteAnyElasticsearchQuery,
+].map(getSXPBlueprintForm);
 
 export const INITIAL_CONFIGURATION = {
 	advanced: {},
