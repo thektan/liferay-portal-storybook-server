@@ -248,10 +248,10 @@ export const QUERY_PREFILTER_CONTRIBUTORS = [
 	"com.liferay.portal.search.internal.spi.model.query.contributor.UserIdQueryPreFilterContributor",
 ];
 
-export const SELECTED_SXP_ELEMENTS = [
+export const QUERY_SXP_ELEMENTS = [
 	boostAllKeywordsMatch,
 	pasteAnyElasticsearchQuery,
-].map(getSXPBlueprintForm);
+];
 
 export const INITIAL_CONFIGURATION = {
 	advanced: {},
@@ -271,7 +271,6 @@ export const INITIAL_CONFIGURATION = {
 	parameters: {},
 	queryConfiguration: {
 		applyIndexerClauses: true,
-		queryEntries: SELECTED_SXP_ELEMENTS.map(getSXPElementOutput),
 	},
 	sortConfiguration: {},
 };

@@ -7,7 +7,8 @@ import {
 	EditBlueprintDecorator,
 } from "../decorators";
 
-import {SELECTED_SXP_ELEMENTS} from "../data";
+import {QUERY_SXP_ELEMENTS} from "../data";
+import {getUIConfigurationValues} from "src/main/resources/META-INF/resources/sxp_blueprint_admin/js/utils/utils";
 
 export default {
 	title: "Components/SXPElement",
@@ -20,7 +21,8 @@ const Template = (args) => <SXPElement {...args} />;
 export const Default = Template.bind({});
 
 Default.args = {
-	sxpElementTemplateJSON: SELECTED_SXP_ELEMENTS[0].sxpElementTemplateJSON,
-	uiConfigurationJSON: SELECTED_SXP_ELEMENTS[0].uiConfigurationJSON,
-	uiConfigurationValues: SELECTED_SXP_ELEMENTS[0].uiConfigurationValues,
+	sxpElement: QUERY_SXP_ELEMENTS[0],
+	uiConfigurationValues: getUIConfigurationValues(
+		QUERY_SXP_ELEMENTS[0].elementDefinition?.uiConfiguration
+	),
 };

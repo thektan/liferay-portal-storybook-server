@@ -14,7 +14,7 @@ export default {
 
 const Template = (args) => (
 	<div className="edit-sxp-element-root">
-		<EditSXPElement sxpElementId="2" {...args} />
+		<EditSXPElement sxpElementId="" {...args} />
 	</div>
 );
 

@@ -2,7 +2,7 @@ import React from "react";
 
 import EditSXPElementForm from "src/main/resources/META-INF/resources/sxp_blueprint_admin/js/edit_sxp_element/EditSXPElementForm";
 import CONTEXT from "../context";
-import {SELECTED_SXP_ELEMENTS} from "../data";
+import {QUERY_SXP_ELEMENTS} from "../data";
 
 export default {
 	title: "Components/EditSXPElementForm",
@@ -25,11 +25,9 @@ export const Default = Template.bind({});
 
 Default.args = {
 	sxpElementId: "1",
-	initialConfiguration: SELECTED_SXP_ELEMENTS[0],
-	initialDescription: {en_US: "Description"},
-	initialTitle: {
-		en_US: "Test Title",
-	},
+	initialElementDefinition: QUERY_SXP_ELEMENTS[0].elementDefinition,
+	initialDescription: QUERY_SXP_ELEMENTS[0].description_i18n,
+	initialTitle: QUERY_SXP_ELEMENTS[0].title_i18n,
 	predefinedVariables: [
 		{
 			className:
