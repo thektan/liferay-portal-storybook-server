@@ -1,5 +1,6 @@
 <script>
 	var Liferay = {
+		detach: () => {},
 		Language: {
 			available: {
 				en_US: "English (United States)",
@@ -17,10 +18,12 @@
 				sv_SE: "Swedish (Sweden)",
 			},
 		},
+		on: () => {},
 		ThemeDisplay: {
 			getBCP47LanguageId: () => "en-US",
 			getCompanyId: () => "0",
 			getDefaultLanguageId: () => "en_US",
+			getPortalURL: () => "http://localhost:9000",
 		},
 		Util: {
 			sub: (key, ...values) => {

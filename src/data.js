@@ -9,8 +9,7 @@
  * distribution rights of the Software.
  */
 
-import boostAllKeywordsMatch from "src/main/resources/META-INF/resources/sxp_blueprint_admin/js/sxp_elements/boostAllKeywordsMatch";
-import pasteAnyElasticsearchQuery from "src/main/resources/META-INF/resources/sxp_blueprint_admin/js/sxp_elements/pasteAnyElasticsearchQuery";
+import {DEFAULT_BASELINE_SXP_ELEMENTS} from "src/main/resources/META-INF/resources/sxp_blueprint_admin/js/utils/data";
 import {
 	getSXPElementOutput,
 	getSXPBlueprintForm,
@@ -248,15 +247,11 @@ export const QUERY_PREFILTER_CONTRIBUTORS = [
 	"com.liferay.portal.search.internal.spi.model.query.contributor.UserIdQueryPreFilterContributor",
 ];
 
-export const QUERY_SXP_ELEMENTS = [
-	boostAllKeywordsMatch,
-	pasteAnyElasticsearchQuery,
-];
+export const QUERY_SXP_ELEMENTS = DEFAULT_BASELINE_SXP_ELEMENTS;
 
 export const INITIAL_CONFIGURATION = {
 	advanced: {},
 	aggregationConfiguration: {},
-	facet: {},
 	general: {
 		clauseContributorsExcludes: [
 			"com.liferay.portal.workflow.kaleo.internal.search.spi.model.query.contributor.KaleoInstanceTokenKeywordQueryContributor",
