@@ -250,9 +250,9 @@ export const QUERY_PREFILTER_CONTRIBUTORS = [
 export const QUERY_SXP_ELEMENTS = DEFAULT_BASELINE_SXP_ELEMENTS;
 
 export const INITIAL_CONFIGURATION = {
-	advanced: {},
+	advancedConfiguration: {},
 	aggregationConfiguration: {},
-	general: {
+	generalConfiguration: {
 		clauseContributorsExcludes: [
 			"com.liferay.portal.workflow.kaleo.internal.search.spi.model.query.contributor.KaleoInstanceTokenKeywordQueryContributor",
 		],
@@ -262,8 +262,8 @@ export const INITIAL_CONFIGURATION = {
 		],
 		searchableAssetTypes: SEARCHABLE_TYPES.map(({className}) => className),
 	},
-	highlight: {},
-	parameters: {},
+	highlightConfiguration: {},
+	parameterConfiguration: {},
 	queryConfiguration: {
 		applyIndexerClauses: true,
 	},
