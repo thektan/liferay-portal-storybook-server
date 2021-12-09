@@ -9,11 +9,7 @@
  * distribution rights of the Software.
  */
 
-import {DEFAULT_BASELINE_SXP_ELEMENTS} from "src/main/resources/META-INF/resources/sxp_blueprint_admin/js/utils/data";
-import {
-	getSXPElementOutput,
-	getSXPBlueprintForm,
-} from "src/main/resources/META-INF/resources/sxp_blueprint_admin/js/utils/utils";
+import textMatchOverMultipleFields from "src/main/resources/META-INF/resources/sxp_blueprint_admin/js/sxp_elements/textMatchOverMultipleFields";
 
 export const ENTITY_JSON = {
 	"com.liferay.asset.kernel.model.AssetTag": {
@@ -247,7 +243,7 @@ export const QUERY_PREFILTER_CONTRIBUTORS = [
 	"com.liferay.portal.search.internal.spi.model.query.contributor.UserIdQueryPreFilterContributor",
 ];
 
-export const QUERY_SXP_ELEMENTS = DEFAULT_BASELINE_SXP_ELEMENTS;
+export const QUERY_SXP_ELEMENTS = [textMatchOverMultipleFields];
 
 export const INITIAL_CONFIGURATION = {
 	advancedConfiguration: {},

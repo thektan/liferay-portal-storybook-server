@@ -38,9 +38,7 @@ AllElements.args = {
 	initialSXPElementInstances: QUERY_SXP_ELEMENTS.map((sxpElement) => ({
 		sxpElement,
 		type: 10,
-		uiConfigurationValues: getUIConfigurationValues(
-			sxpElement.elementDefinition?.uiConfiguration
-		),
+		uiConfigurationValues: getUIConfigurationValues(sxpElement),
 	})),
 };
 

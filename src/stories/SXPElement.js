@@ -22,7 +22,5 @@ export const Default = Template.bind({});
 
 Default.args = {
 	sxpElement: QUERY_SXP_ELEMENTS[0],
-	uiConfigurationValues: getUIConfigurationValues(
-		QUERY_SXP_ELEMENTS[0].elementDefinition?.uiConfiguration
-	),
+	uiConfigurationValues: getUIConfigurationValues(QUERY_SXP_ELEMENTS[0]),
 };
