@@ -28,7 +28,7 @@ function createThemeImagePath() {
 			return console.error(error);
 		}
 
-		console.log(`✅ Successfully copied:`);
+		console.log(`📝 Successfully copied:`);
 		console.log(`Source: ${source}`);
 		console.log(`Destination: ${destination}`);
 	});
@@ -46,7 +46,7 @@ function copyStaticFiles() {
 			console.error(error);
 		}
 
-		console.log(`✅ Successfully copied:`);
+		console.log(`📝 Successfully copied:`);
 		console.log(`Source: ${source}`);
 		console.log(`Destination: ${destination}`);
 	});

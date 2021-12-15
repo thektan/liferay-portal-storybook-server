@@ -12,7 +12,7 @@ const path = require("path");
  * liferay-lang-key-dev-loader to read from.
  */
 function buildLanguageProperties() {
-	console.log("Building .storybook/Language.properties");
+	console.log("🛠 Building .storybook/Language.properties");
 
 	const PORTAL_LANG_PATH = path.join(
 		process.env.PORTAL_PATH,
