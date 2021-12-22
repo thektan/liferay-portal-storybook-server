@@ -25,8 +25,8 @@ export const Default = Template.bind({});
 
 Default.args = {
 	sxpElementId: "1",
-	initialElementDefinition: QUERY_SXP_ELEMENTS[0].elementDefinition,
 	initialDescription: QUERY_SXP_ELEMENTS[0].description_i18n,
+	initialSXPElementJSON: QUERY_SXP_ELEMENTS[0],
 	initialTitle: QUERY_SXP_ELEMENTS[0].title_i18n,
 	predefinedVariables: [
 		{
