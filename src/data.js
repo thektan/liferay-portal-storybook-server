@@ -256,7 +256,7 @@ export const INITIAL_CONFIGURATION = {
 			"com.liferay.portal.search.internal.spi.model.query.contributor.AlwaysPresentFieldsKeywordQueryContributor",
 			"com.liferay.account.internal.search.spi.model.query.contributor.AccountGroupKeywordQueryContributor",
 		],
-		searchableAssetTypes: SEARCHABLE_TYPES.map(({className}) => className),
+		searchableAssetTypes: [],
 	},
 	highlightConfiguration: {},
 	parameterConfiguration: {},
