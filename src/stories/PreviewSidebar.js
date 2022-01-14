@@ -4,6 +4,8 @@ import PreviewSidebar from "src/main/resources/META-INF/resources/sxp_blueprint_
 import {EditBlueprintDecorator} from "../decorators";
 import {mockSearchResults} from "src/../test/js/mocks/data";
 
+const {response, responseString, searchHits} = mockSearchResults();
+
 export default {
 	title: "Components/PreviewSidebar",
 	decorators: [EditBlueprintDecorator],
@@ -21,8 +23,9 @@ const SEARCH_RESULTS = mockSearchResults();
 
 Default.args = {
 	loading: false,
-	responseString: SEARCH_RESULTS.responseString,
-	totalHits: SEARCH_RESULTS.totalHits,
+	response,
+	responseString,
+	searchHits,
 	visible: true,
 };
 
@@ -30,8 +33,9 @@ export const Empty = Template.bind({});
 
 Empty.args = {
 	...Default.args,
+	response: {},
 	responseString: "",
-	totalHits: 0,
+	searchHits: {hits: [], totalHits: 0},
 };
 
 export const Errors = Template.bind({});
