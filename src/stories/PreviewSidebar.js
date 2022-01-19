@@ -3,8 +3,9 @@ import React from "react";
 import PreviewSidebar from "src/main/resources/META-INF/resources/sxp_blueprint_admin/js/edit_sxp_blueprint/PreviewSidebar";
 import {EditBlueprintDecorator} from "../decorators";
 import {mockSearchResults} from "src/../test/js/mocks/data";
+import {transformToSearchPreviewHits} from "src/main/resources/META-INF/resources/sxp_blueprint_admin/js/utils/utils";
 
-const {response, responseString, searchHits} = mockSearchResults();
+const SEARCH_RESULTS = mockSearchResults();
 
 export default {
 	title: "Components/PreviewSidebar",
@@ -19,13 +20,11 @@ const Template = (args) => <PreviewSidebar {...args} />;
 
 export const Default = Template.bind({});
 
-const SEARCH_RESULTS = mockSearchResults();
-
 Default.args = {
 	loading: false,
-	response,
-	responseString,
-	searchHits,
+	hits: transformToSearchPreviewHits(SEARCH_RESULTS),
+	responseString: SEARCH_RESULTS.responseString,
+	totalHits: SEARCH_RESULTS.searchHits.totalHits,
 	visible: true,
 };
 
@@ -33,9 +32,9 @@ export const Empty = Template.bind({});
 
 Empty.args = {
 	...Default.args,
-	response: {},
+	hits: [],
 	responseString: "",
-	searchHits: {hits: [], totalHits: 0},
+	totalHits: 0,
 };
 
 export const Errors = Template.bind({});
