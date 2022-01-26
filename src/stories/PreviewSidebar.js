@@ -40,7 +40,6 @@ Empty.args = {
 export const Errors = Template.bind({});
 
 Errors.args = {
-	...Default.args,
 	errors: [
 		{
 			className:
@@ -101,20 +100,14 @@ Errors.args = {
 			},
 		},
 	],
+	loading: false,
+	visible: true,
 };
 
-export const Warning = Template.bind({});
+export const ErrorsAndHits = Template.bind({});
 
-Warning.args = {
+ErrorsAndHits.args = {
 	...Default.args,
-	warnings: [{msg: "The configuration has missing or invalid values."}],
-};
-
-export const WarningsAndErrors = Template.bind({});
-
-WarningsAndErrors.args = {
-	...Default.args,
-	warnings: [{msg: "The configuration has missing or invalid values."}],
 	errors: [
 		{
 			className:
