@@ -13,13 +13,13 @@ export const Default = (args) => (
 		<h3>Blueprint Errors</h3>
 
 		{SXP_BLUEPRINT_ERRORS.map((error, index) => (
-			<ErrorListItem item={error} key={index} />
+			<ErrorListItem error={error} key={index} />
 		))}
 
 		<h3>Element Errors</h3>
 
 		{SXP_ELEMENT_ERRORS.map((error, index) => (
-			<ErrorListItem item={error} key={index} />
+			<ErrorListItem error={error} key={index} />
 		))}
 	</div>
 );
