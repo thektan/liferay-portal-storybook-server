@@ -1,6 +1,6 @@
 import React from "react";
 
-import PreviewSidebar from "src/main/resources/META-INF/resources/sxp_blueprint_admin/js/edit_sxp_blueprint/PreviewSidebar";
+import PreviewSidebar from "src/main/resources/META-INF/resources/sxp_blueprint_admin/js/edit_sxp_blueprint/preview_sidebar/index";
 import {EditBlueprintDecorator} from "../decorators";
 import {mockSearchResults} from "src/../test/js/mocks/data";
 import {transformToSearchPreviewHits} from "src/main/resources/META-INF/resources/sxp_blueprint_admin/js/utils/utils";
