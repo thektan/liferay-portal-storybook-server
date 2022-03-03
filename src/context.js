@@ -1,3 +1,5 @@
+import learnMessages from "../static/search-experiences-web.json";
+
 export default {
 	availableLanguages: {
 		ar_SA: "Arabic (Saudi Arabia)",
@@ -8,6 +10,7 @@ export default {
 	},
 	contextPath: "/o/search-experiences-web",
 	defaultLocale: "en_US",
+	learnMessages,
 	locale: "en_US",
 	namespace:
 		"_com_liferay_search_experiences_search_configuration_web_internal_portlet_SearchConfigurationAdminPortlet_",
