@@ -17,9 +17,7 @@ const Template = (args) => <PageToolbar {...args} />;
 export const Default = Template.bind({});
 
 Default.args = {
-	initialTitle: {
-		"en-US": "Test Title",
-	},
+	title: "Test Title",
 	onCancel: "#",
 	tab: "query-builder",
 	tabs: {
