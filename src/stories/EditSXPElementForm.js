@@ -1,25 +1,19 @@
 import React from "react";
 
 import EditSXPElementForm from "src/main/resources/META-INF/resources/sxp_blueprint_admin/js/edit_sxp_element/EditSXPElementForm";
-import CONTEXT from "../context";
+import {EditElementDecorator, ThemeContextDecorator} from "../decorators";
 import {QUERY_SXP_ELEMENTS} from "../data";
 
 export default {
 	title: "Components/EditSXPElementForm",
 	component: EditSXPElementForm,
+	decorators: [EditElementDecorator, ThemeContextDecorator],
 	parameters: {
 		layout: "fullscreen",
 	},
-	args: {
-		context: CONTEXT,
-	},
 };
 
-const Template = (args) => (
-	<div className="edit-sxp-element-root">
-		<EditSXPElementForm {...args} />
-	</div>
-);
+const Template = (args) => <EditSXPElementForm {...args} />;
 
 export const Default = Template.bind({});
 

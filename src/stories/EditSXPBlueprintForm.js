@@ -1,27 +1,21 @@
 import React from "react";
 
 import EditSXPBlueprintForm from "src/main/resources/META-INF/resources/sxp_blueprint_admin/js/edit_sxp_blueprint/EditSXPBlueprintForm";
-import CONTEXT from "../context";
 import {getUIConfigurationValues} from "src/main/resources/META-INF/resources/sxp_blueprint_admin/js/utils/utils";
+import {EditBlueprintDecorator, ThemeContextDecorator} from "../decorators";
 
 import {ENTITY_JSON, INITIAL_CONFIGURATION, QUERY_SXP_ELEMENTS} from "../data";
 
 export default {
 	title: "Components/EditSXPBlueprintForm",
 	component: EditSXPBlueprintForm,
+	decorators: [EditBlueprintDecorator, ThemeContextDecorator],
 	parameters: {
 		layout: "fullscreen",
 	},
-	args: {
-		context: CONTEXT,
-	},
 };
 
-const Template = (args) => (
-	<div className="edit-sxp-blueprint-root">
-		<EditSXPBlueprintForm {...args} />
-	</div>
-);
+const Template = (args) => <EditSXPBlueprintForm {...args} />;
 
 export const AllElements = Template.bind({});
 
