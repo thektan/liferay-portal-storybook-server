@@ -1,5 +1,26 @@
 {
+	"advanced-configuration": {
+		"en_US": {
+			"message": "Learn more."
+		}
+	},
+	"aggregation-configuration": {
+		"en_US": {
+			"message": "Learn more."
+		}
+	},
 	"element-source": {
+		"en_US": {
+			"message": "Learn more.",
+			"url": "https://learn.liferay.com/dxp/latest/en/using-search/liferay-enterprise-search/search-experiences/search-blueprints-elements-reference.html"
+		}
+	},
+	"highlight-configuration": {
+		"en_US": {
+			"message": "Learn more."
+		}
+	},
+	"parameter-configuration": {
 		"en_US": {
 			"message": "Learn more."
 		}
@@ -12,7 +33,8 @@
 	},
 	"query-elements": {
 		"en_US": {
-			"message": "Learn more."
+			"message": "Learn more.",
+			"url": "https://learn.liferay.com/dxp/latest/en/using-search/liferay-enterprise-search/search-experiences/search-blueprints-elements-reference.html"
 		}
 	},
 	"search-blueprint-configuration": {
@@ -22,8 +44,13 @@
 	},
 	"search-blueprint-on-search-page": {
 		"en_US": {
-			"message": "Learn how.",
+			"message": "Learn how to use blueprints on a search page.",
 			"url": "https://learn.liferay.com/dxp/latest/en/using-search/liferay-enterprise-search/search-experiences/using-a-search-blueprint-on-a-search-page.html"
+		}
+	},
+	"sort-configuration": {
+		"en_US": {
+			"message": "Learn more."
 		}
 	}
 }
