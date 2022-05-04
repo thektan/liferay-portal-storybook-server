@@ -10,7 +10,8 @@ export default {
 	},
 	contextPath: "/o/search-experiences-web",
 	defaultLocale: "en_US",
-	jsonAutocompleteEnabled: true,
+	featureFlagLps148749: true,
+	featureFlagLps143720: true,
 	learnMessages,
 	locale: "en_US",
 	namespace:
