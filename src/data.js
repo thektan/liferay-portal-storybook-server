@@ -9,8 +9,6 @@
  * distribution rights of the Software.
  */
 
-import textMatchOverMultipleFields from "src/main/resources/META-INF/resources/sxp_blueprint_admin/js/sxp_elements/textMatchOverMultipleFields";
-
 export const ENTITY_JSON = {
 	"com.liferay.asset.kernel.model.AssetTag": {
 		multiple: false,
@@ -242,8 +240,6 @@ export const QUERY_PREFILTER_CONTRIBUTORS = [
 	"com.liferay.portal.search.internal.spi.model.query.contributor.LayoutQueryPreFilterContributor",
 	"com.liferay.portal.search.internal.spi.model.query.contributor.UserIdQueryPreFilterContributor",
 ];
-
-export const QUERY_SXP_ELEMENTS = [textMatchOverMultipleFields];
 
 export const INITIAL_CONFIGURATION = {
 	advancedConfiguration: {},

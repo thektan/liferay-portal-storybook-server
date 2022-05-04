@@ -4,7 +4,8 @@ import EditSXPBlueprintForm from "src/main/resources/META-INF/resources/sxp_blue
 import {getUIConfigurationValues} from "src/main/resources/META-INF/resources/sxp_blueprint_admin/js/utils/utils";
 import {EditBlueprintDecorator, ThemeContextDecorator} from "../decorators";
 
-import {ENTITY_JSON, INITIAL_CONFIGURATION, QUERY_SXP_ELEMENTS} from "../data";
+import {ENTITY_JSON, INITIAL_CONFIGURATION} from "../data";
+import {QUERY_SXP_ELEMENTS} from "test/js/mocks/data.js";
 
 export default {
 	title: "Components/EditSXPBlueprintForm",
