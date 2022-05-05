@@ -1,5 +1,52 @@
 <script>
-	var Liferay = {
+	const themeDisplay = {
+		getBCP47LanguageId: () => "en-US",
+		getCDNBaseURL: () => {},
+		getCDNDynamicResourcesHost: () => {},
+		getCDNHost: () => {},
+		getCanonicalURL: () => {},
+		getCompanyGroupId: () => {},
+		getCompanyId: () => "0",
+		getDefaultLanguageId: () => "en_US",
+		getDoAsUserIdEncoded: () => {},
+		getLanguageId: () => "en-US",
+		getLayoutId: () => {},
+		getLayoutRelativeControlPanelURL: () => {},
+		getLayoutRelativeURL: () => {},
+		getLayoutURL: () => {},
+		getParentGroupId: () => {},
+		getParentLayoutId: () => {},
+		getPathContext: () => "",
+		getPathImage: () => {},
+		getPathJavaScript: () => {},
+		getPathMain: () => {},
+		getPathThemeImages: () => {},
+		getPathThemeRoot: () => {},
+		getPlid: () => {},
+		getPortalURL: () => "http://localhost:9000",
+		getScopeGroupId: () => {},
+		getScopeGroupIdOrLiveGroupId: () => {},
+		getSessionId: () => {},
+		getSiteAdminURL: () => {},
+		getSiteGroupId: () => {},
+		getURLControlPanel: () => {},
+		getURLHome: () => {},
+		getUserEmailAddress: () => {},
+		getUserId: () => {},
+		getUserName: () => {},
+		isAddSessionIdToURL: () => {},
+		isControlPanel: () => {},
+		isImpersonated: () => {},
+		isPrivateLayout: () => {},
+		isSignedIn: () => {},
+		isStagedPortlet: () => {},
+		isStateExclusive: () => {},
+		isStateMaximized: () => {},
+		isStatePopUp: () => {},
+		isVirtualLayout: () => {},
+	};
+
+	const Liferay = {
 		detach: () => {},
 		Language: {
 			available: {
@@ -19,13 +66,7 @@
 			},
 		},
 		on: () => {},
-		ThemeDisplay: {
-			getBCP47LanguageId: () => "en-US",
-			getCompanyId: () => "0",
-			getDefaultLanguageId: () => "en_US",
-			getLanguageId: () => "en-US",
-			getPortalURL: () => "http://localhost:9000",
-		},
+		ThemeDisplay: themeDisplay,
 		Util: {
 			sub: (key, ...values) => {
 				return values.reduce(
