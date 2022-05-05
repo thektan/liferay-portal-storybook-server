@@ -1,4 +1,3 @@
-/**
 import React from "react";
 
 import ViewSXPBlueprints from "src/main/resources/META-INF/resources/sxp_blueprint_admin/js/view_sxp_blueprints/index";
@@ -19,6 +18,7 @@ export const Default = Template.bind({});
 
 Default.args = {
 	apiURL: "/o/search-experiences-rest/v1.0/sxp-blueprints",
+	// apiURL: "https://run.mocky.io/v3/b163d9ae-e2dc-4225-b9b3-19a26a946459",
 	defaultLocale: "en_US",
 	editSXPBlueprintURL:
 		"http://localhost:8080/group/guest/~/control_panel/manage?p_p_id=com_liferay_search_experiences_web_internal_blueprint_admin_portlet_SXPBlueprintAdminPortlet&p_p_lifecycle=0&p_p_state=maximized&p_p_mode=view&_com_liferay_search_experiences_web_internal_blueprint_admin_portlet_SXPBlueprintAdminPortlet_mvcRenderCommandName=%2Fsxp_blueprint_admin%2Fedit_sxp_blueprint",
@@ -26,7 +26,7 @@ Default.args = {
 	namespace:
 		"_com_liferay_search_experiences_web_internal_blueprint_admin_portlet_SXPBlueprintAdminPortlet_",
 };
-*/
+
 /**
  * Unused, but keeping these for reference
 

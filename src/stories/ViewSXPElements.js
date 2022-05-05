@@ -1,4 +1,3 @@
-/**
 import React from "react";
 
 import ViewSXPElements from "src/main/resources/META-INF/resources/sxp_blueprint_admin/js/view_sxp_elements/index";
@@ -24,4 +23,3 @@ Default.args = {
 	namespace:
 		"_com_liferay_search_experiences_web_internal_blueprint_admin_portlet_SXPBlueprintAdminPortlet_",
 };
-*/
