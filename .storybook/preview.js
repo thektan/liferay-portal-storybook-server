@@ -4,7 +4,7 @@ import {ClayIconSpriteContext} from "@clayui/icon";
 import "../../liferay-portal-master/portal/modules/apps/frontend-theme/frontend-theme-admin/build/css/main.css";
 import "../../liferay-portal-master/portal/modules/apps/frontend-theme/frontend-theme-admin/build/css/clay.css";
 
-import "src/main/resources/META-INF/resources/sxp_blueprint_admin/css/main.scss";
+import "src/main/resources/META-INF/resources/css/main.scss";
 
 const SPRITEMAP_PATH = "icons.svg";
 
@@ -26,10 +26,8 @@ export const parameters = {
 
 export const decorators = [
 	(Story) => (
-		<div className="portlet-sxp-blueprint-admin">
-			<ClayIconSpriteContext.Provider value={SPRITEMAP_PATH}>
-				<Story />
-			</ClayIconSpriteContext.Provider>
-		</div>
+		<ClayIconSpriteContext.Provider value={SPRITEMAP_PATH}>
+			<Story />
+		</ClayIconSpriteContext.Provider>
 	),
 ];
