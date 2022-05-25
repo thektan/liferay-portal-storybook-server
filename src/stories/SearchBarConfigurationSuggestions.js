@@ -11,7 +11,18 @@ export default {
 
 const Template = (args) => (
 	<SearchBarConfigurationSuggestions
-		initialSuggestionsContributorConfiguration='[{"contributorName":"blueprint","displayGroupName":"suggestions","size":5,"fields":["entryClassName"], "includeAssetSummary":false, "includeAssetURL":true}]'
+		initialSuggestionsContributorConfiguration={JSON.stringify([
+			{
+				contributorName: "blueprint",
+				displayGroupName: "suggestions",
+				size: 5,
+				attributes: {
+					fields: ["entryClassName", "title"],
+					includeAssetSummary: false,
+					includeAssetURL: true,
+				},
+			},
+		])}
 		{...args}
 	/>
 );
