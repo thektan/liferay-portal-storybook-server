@@ -1,0 +1,260 @@
+{
+	"actions": {},
+	"facets": [],
+	"items": [
+		{
+			"attributes": {},
+			"displayGroupName": "suggestions",
+			"suggestions": [
+				{
+					"attributes": {
+						"assetSearchSummary": "banana 1",
+						"fields": {
+							"entryClassName": "com.liferay.blogs.model.BlogsEntry"
+						},
+						"assetURL": "http://localhost:8080/web/guest/search?p_p_id=com_liferay_portal_search_web_search_results_portlet_SearchResultsPortlet&p_p_lifecycle=0&p_p_state=maximized&p_p_mode=view&_com_liferay_portal_search_web_search_results_portlet_SearchResultsPortlet_mvcPath=%2Fview_content.jsp&_com_liferay_portal_search_web_search_results_portlet_SearchResultsPortlet_assetEntryId=41335&_com_liferay_portal_search_web_search_results_portlet_SearchResultsPortlet_type=blog&p_p_auth=4VGqRTs7&p_l_back_url=http%3A%2F%2Flocalhost%3A8080%2Fweb%2Fguest"
+					},
+					"score": 126.88101,
+					"text": "Banana 1"
+				},
+				{
+					"attributes": {
+						"assetSearchSummary": "A banana\n   is an elongated, edible fruit\n   – botanically a berry\n  [1]\n  [2]\n   – produced by several kinds of large herbaceous\n   flowering plants\n   in the genus\n      Musa\n  .[3]\n   In some...",
+						"fields": {
+							"entryClassName": "com.liferay.blogs.model.BlogsEntry"
+						},
+						"assetURL": "http://localhost:8080/web/guest/search?p_p_id=com_liferay_portal_search_web_search_results_portlet_SearchResultsPortlet&p_p_lifecycle=0&p_p_state=maximized&p_p_mode=view&_com_liferay_portal_search_web_search_results_portlet_SearchResultsPortlet_mvcPath=%2Fview_content.jsp&_com_liferay_portal_search_web_search_results_portlet_SearchResultsPortlet_assetEntryId=41371&_com_liferay_portal_search_web_search_results_portlet_SearchResultsPortlet_type=blog&p_p_auth=4VGqRTs7&p_l_back_url=http%3A%2F%2Flocalhost%3A8080%2Fweb%2Fguest"
+					},
+					"score": 125.30666,
+					"text": "Banana Blog"
+				},
+				{
+					"attributes": {
+						"assetSearchSummary": "",
+						"fields": {
+							"entryClassName": "com.liferay.journal.model.JournalArticle"
+						},
+						"assetURL": "http://localhost:8080/web/guest/search?p_p_id=com_liferay_portal_search_web_search_results_portlet_SearchResultsPortlet&p_p_lifecycle=0&p_p_state=maximized&p_p_mode=view&_com_liferay_portal_search_web_search_results_portlet_SearchResultsPortlet_mvcPath=%2Fview_content.jsp&_com_liferay_portal_search_web_search_results_portlet_SearchResultsPortlet_assetEntryId=41358&_com_liferay_portal_search_web_search_results_portlet_SearchResultsPortlet_type=content&p_p_auth=4VGqRTs7&p_l_back_url=http%3A%2F%2Flocalhost%3A8080%2Fweb%2Fguest"
+					},
+					"score": 20.432076,
+					"text": "Banana 3"
+				},
+				{
+					"attributes": {
+						"assetSearchSummary": "",
+						"fields": {
+							"entryClassName": "com.liferay.journal.model.JournalArticle"
+						},
+						"assetURL": "http://localhost:8080/web/guest/search?p_p_id=com_liferay_portal_search_web_search_results_portlet_SearchResultsPortlet&p_p_lifecycle=0&p_p_state=maximized&p_p_mode=view&_com_liferay_portal_search_web_search_results_portlet_SearchResultsPortlet_mvcPath=%2Fview_content.jsp&_com_liferay_portal_search_web_search_results_portlet_SearchResultsPortlet_assetEntryId=41344&_com_liferay_portal_search_web_search_results_portlet_SearchResultsPortlet_type=content&p_p_auth=4VGqRTs7&p_l_back_url=http%3A%2F%2Flocalhost%3A8080%2Fweb%2Fguest"
+					},
+					"score": 20.432076,
+					"text": "Banana 2"
+				}
+			]
+		},
+		{
+			"attributes": {},
+			"displayGroupName": "articles",
+			"suggestions": [
+				{
+					"attributes": {
+						"assetSearchSummary": "banana 1",
+						"fields": {
+							"entryClassName": "com.liferay.blogs.model.BlogsEntry"
+						},
+						"assetURL": "http://localhost:8080/web/guest/search?p_p_id=com_liferay_portal_search_web_search_results_portlet_SearchResultsPortlet&p_p_lifecycle=0&p_p_state=maximized&p_p_mode=view&_com_liferay_portal_search_web_search_results_portlet_SearchResultsPortlet_mvcPath=%2Fview_content.jsp&_com_liferay_portal_search_web_search_results_portlet_SearchResultsPortlet_assetEntryId=41335&_com_liferay_portal_search_web_search_results_portlet_SearchResultsPortlet_type=blog&p_p_auth=4VGqRTs7&p_l_back_url=http%3A%2F%2Flocalhost%3A8080%2Fweb%2Fguest"
+					},
+					"score": 126.88101,
+					"text": "Banana 1"
+				},
+				{
+					"attributes": {
+						"assetSearchSummary": "A banana\n   is an elongated, edible fruit\n   – botanically a berry\n  [1]\n  [2]\n   – produced by several kinds of large herbaceous\n   flowering plants\n   in the genus\n      Musa\n  .[3]\n   In some...",
+						"fields": {
+							"entryClassName": "com.liferay.blogs.model.BlogsEntry"
+						},
+						"assetURL": "http://localhost:8080/web/guest/search?p_p_id=com_liferay_portal_search_web_search_results_portlet_SearchResultsPortlet&p_p_lifecycle=0&p_p_state=maximized&p_p_mode=view&_com_liferay_portal_search_web_search_results_portlet_SearchResultsPortlet_mvcPath=%2Fview_content.jsp&_com_liferay_portal_search_web_search_results_portlet_SearchResultsPortlet_assetEntryId=41371&_com_liferay_portal_search_web_search_results_portlet_SearchResultsPortlet_type=blog&p_p_auth=4VGqRTs7&p_l_back_url=http%3A%2F%2Flocalhost%3A8080%2Fweb%2Fguest"
+					},
+					"score": 125.30666,
+					"text": "Banana Blog"
+				},
+				{
+					"attributes": {
+						"assetSearchSummary": "",
+						"fields": {
+							"entryClassName": "com.liferay.journal.model.JournalArticle"
+						},
+						"assetURL": "http://localhost:8080/web/guest/search?p_p_id=com_liferay_portal_search_web_search_results_portlet_SearchResultsPortlet&p_p_lifecycle=0&p_p_state=maximized&p_p_mode=view&_com_liferay_portal_search_web_search_results_portlet_SearchResultsPortlet_mvcPath=%2Fview_content.jsp&_com_liferay_portal_search_web_search_results_portlet_SearchResultsPortlet_assetEntryId=41358&_com_liferay_portal_search_web_search_results_portlet_SearchResultsPortlet_type=content&p_p_auth=4VGqRTs7&p_l_back_url=http%3A%2F%2Flocalhost%3A8080%2Fweb%2Fguest"
+					},
+					"score": 20.432076,
+					"text": "Banana 3"
+				},
+				{
+					"attributes": {
+						"assetSearchSummary": "",
+						"fields": {
+							"entryClassName": "com.liferay.journal.model.JournalArticle"
+						},
+						"assetURL": "http://localhost:8080/web/guest/search?p_p_id=com_liferay_portal_search_web_search_results_portlet_SearchResultsPortlet&p_p_lifecycle=0&p_p_state=maximized&p_p_mode=view&_com_liferay_portal_search_web_search_results_portlet_SearchResultsPortlet_mvcPath=%2Fview_content.jsp&_com_liferay_portal_search_web_search_results_portlet_SearchResultsPortlet_assetEntryId=41344&_com_liferay_portal_search_web_search_results_portlet_SearchResultsPortlet_type=content&p_p_auth=4VGqRTs7&p_l_back_url=http%3A%2F%2Flocalhost%3A8080%2Fweb%2Fguest"
+					},
+					"score": 20.432076,
+					"text": "Banana 2"
+				}
+			]
+		},
+		{
+			"attributes": {},
+			"displayGroupName": "wiki",
+			"suggestions": [
+				{
+					"attributes": {
+						"assetSearchSummary": "banana 1",
+						"fields": {
+							"entryClassName": "com.liferay.blogs.model.BlogsEntry"
+						},
+						"assetURL": "http://localhost:8080/web/guest/search?p_p_id=com_liferay_portal_search_web_search_results_portlet_SearchResultsPortlet&p_p_lifecycle=0&p_p_state=maximized&p_p_mode=view&_com_liferay_portal_search_web_search_results_portlet_SearchResultsPortlet_mvcPath=%2Fview_content.jsp&_com_liferay_portal_search_web_search_results_portlet_SearchResultsPortlet_assetEntryId=41335&_com_liferay_portal_search_web_search_results_portlet_SearchResultsPortlet_type=blog&p_p_auth=4VGqRTs7&p_l_back_url=http%3A%2F%2Flocalhost%3A8080%2Fweb%2Fguest"
+					},
+					"score": 126.88101,
+					"text": "Banana 1"
+				},
+				{
+					"attributes": {
+						"assetSearchSummary": "A banana\n   is an elongated, edible fruit\n   – botanically a berry\n  [1]\n  [2]\n   – produced by several kinds of large herbaceous\n   flowering plants\n   in the genus\n      Musa\n  .[3]\n   In some...",
+						"fields": {
+							"entryClassName": "com.liferay.blogs.model.BlogsEntry"
+						},
+						"assetURL": "http://localhost:8080/web/guest/search?p_p_id=com_liferay_portal_search_web_search_results_portlet_SearchResultsPortlet&p_p_lifecycle=0&p_p_state=maximized&p_p_mode=view&_com_liferay_portal_search_web_search_results_portlet_SearchResultsPortlet_mvcPath=%2Fview_content.jsp&_com_liferay_portal_search_web_search_results_portlet_SearchResultsPortlet_assetEntryId=41371&_com_liferay_portal_search_web_search_results_portlet_SearchResultsPortlet_type=blog&p_p_auth=4VGqRTs7&p_l_back_url=http%3A%2F%2Flocalhost%3A8080%2Fweb%2Fguest"
+					},
+					"score": 125.30666,
+					"text": "Banana Blog"
+				},
+				{
+					"attributes": {
+						"assetSearchSummary": "",
+						"fields": {
+							"entryClassName": "com.liferay.journal.model.JournalArticle"
+						},
+						"assetURL": "http://localhost:8080/web/guest/search?p_p_id=com_liferay_portal_search_web_search_results_portlet_SearchResultsPortlet&p_p_lifecycle=0&p_p_state=maximized&p_p_mode=view&_com_liferay_portal_search_web_search_results_portlet_SearchResultsPortlet_mvcPath=%2Fview_content.jsp&_com_liferay_portal_search_web_search_results_portlet_SearchResultsPortlet_assetEntryId=41358&_com_liferay_portal_search_web_search_results_portlet_SearchResultsPortlet_type=content&p_p_auth=4VGqRTs7&p_l_back_url=http%3A%2F%2Flocalhost%3A8080%2Fweb%2Fguest"
+					},
+					"score": 20.432076,
+					"text": "Banana 3"
+				},
+				{
+					"attributes": {
+						"assetSearchSummary": "",
+						"fields": {
+							"entryClassName": "com.liferay.journal.model.JournalArticle"
+						},
+						"assetURL": "http://localhost:8080/web/guest/search?p_p_id=com_liferay_portal_search_web_search_results_portlet_SearchResultsPortlet&p_p_lifecycle=0&p_p_state=maximized&p_p_mode=view&_com_liferay_portal_search_web_search_results_portlet_SearchResultsPortlet_mvcPath=%2Fview_content.jsp&_com_liferay_portal_search_web_search_results_portlet_SearchResultsPortlet_assetEntryId=41344&_com_liferay_portal_search_web_search_results_portlet_SearchResultsPortlet_type=content&p_p_auth=4VGqRTs7&p_l_back_url=http%3A%2F%2Flocalhost%3A8080%2Fweb%2Fguest"
+					},
+					"score": 20.432076,
+					"text": "Banana 2"
+				}
+			]
+		},
+		{
+			"attributes": {},
+			"displayGroupName": "media",
+			"suggestions": [
+				{
+					"attributes": {
+						"assetSearchSummary": "banana 1",
+						"fields": {
+							"entryClassName": "com.liferay.blogs.model.BlogsEntry"
+						},
+						"assetURL": "http://localhost:8080/web/guest/search?p_p_id=com_liferay_portal_search_web_search_results_portlet_SearchResultsPortlet&p_p_lifecycle=0&p_p_state=maximized&p_p_mode=view&_com_liferay_portal_search_web_search_results_portlet_SearchResultsPortlet_mvcPath=%2Fview_content.jsp&_com_liferay_portal_search_web_search_results_portlet_SearchResultsPortlet_assetEntryId=41335&_com_liferay_portal_search_web_search_results_portlet_SearchResultsPortlet_type=blog&p_p_auth=4VGqRTs7&p_l_back_url=http%3A%2F%2Flocalhost%3A8080%2Fweb%2Fguest"
+					},
+					"score": 126.88101,
+					"text": "Banana 1"
+				},
+				{
+					"attributes": {
+						"assetSearchSummary": "A banana\n   is an elongated, edible fruit\n   – botanically a berry\n  [1]\n  [2]\n   – produced by several kinds of large herbaceous\n   flowering plants\n   in the genus\n      Musa\n  .[3]\n   In some...",
+						"fields": {
+							"entryClassName": "com.liferay.blogs.model.BlogsEntry"
+						},
+						"assetURL": "http://localhost:8080/web/guest/search?p_p_id=com_liferay_portal_search_web_search_results_portlet_SearchResultsPortlet&p_p_lifecycle=0&p_p_state=maximized&p_p_mode=view&_com_liferay_portal_search_web_search_results_portlet_SearchResultsPortlet_mvcPath=%2Fview_content.jsp&_com_liferay_portal_search_web_search_results_portlet_SearchResultsPortlet_assetEntryId=41371&_com_liferay_portal_search_web_search_results_portlet_SearchResultsPortlet_type=blog&p_p_auth=4VGqRTs7&p_l_back_url=http%3A%2F%2Flocalhost%3A8080%2Fweb%2Fguest"
+					},
+					"score": 125.30666,
+					"text": "Banana Blog"
+				},
+				{
+					"attributes": {
+						"assetSearchSummary": "",
+						"fields": {
+							"entryClassName": "com.liferay.journal.model.JournalArticle"
+						},
+						"assetURL": "http://localhost:8080/web/guest/search?p_p_id=com_liferay_portal_search_web_search_results_portlet_SearchResultsPortlet&p_p_lifecycle=0&p_p_state=maximized&p_p_mode=view&_com_liferay_portal_search_web_search_results_portlet_SearchResultsPortlet_mvcPath=%2Fview_content.jsp&_com_liferay_portal_search_web_search_results_portlet_SearchResultsPortlet_assetEntryId=41358&_com_liferay_portal_search_web_search_results_portlet_SearchResultsPortlet_type=content&p_p_auth=4VGqRTs7&p_l_back_url=http%3A%2F%2Flocalhost%3A8080%2Fweb%2Fguest"
+					},
+					"score": 20.432076,
+					"text": "Banana 3"
+				},
+				{
+					"attributes": {
+						"assetSearchSummary": "",
+						"fields": {
+							"entryClassName": "com.liferay.journal.model.JournalArticle"
+						},
+						"assetURL": "http://localhost:8080/web/guest/search?p_p_id=com_liferay_portal_search_web_search_results_portlet_SearchResultsPortlet&p_p_lifecycle=0&p_p_state=maximized&p_p_mode=view&_com_liferay_portal_search_web_search_results_portlet_SearchResultsPortlet_mvcPath=%2Fview_content.jsp&_com_liferay_portal_search_web_search_results_portlet_SearchResultsPortlet_assetEntryId=41344&_com_liferay_portal_search_web_search_results_portlet_SearchResultsPortlet_type=content&p_p_auth=4VGqRTs7&p_l_back_url=http%3A%2F%2Flocalhost%3A8080%2Fweb%2Fguest"
+					},
+					"score": 20.432076,
+					"text": "Banana 2"
+				}
+			]
+		},
+		{
+			"attributes": {},
+			"displayGroupName": "web content",
+			"suggestions": [
+				{
+					"attributes": {
+						"assetSearchSummary": "banana 1",
+						"fields": {
+							"entryClassName": "com.liferay.blogs.model.BlogsEntry"
+						},
+						"assetURL": "http://localhost:8080/web/guest/search?p_p_id=com_liferay_portal_search_web_search_results_portlet_SearchResultsPortlet&p_p_lifecycle=0&p_p_state=maximized&p_p_mode=view&_com_liferay_portal_search_web_search_results_portlet_SearchResultsPortlet_mvcPath=%2Fview_content.jsp&_com_liferay_portal_search_web_search_results_portlet_SearchResultsPortlet_assetEntryId=41335&_com_liferay_portal_search_web_search_results_portlet_SearchResultsPortlet_type=blog&p_p_auth=4VGqRTs7&p_l_back_url=http%3A%2F%2Flocalhost%3A8080%2Fweb%2Fguest"
+					},
+					"score": 126.88101,
+					"text": "Banana 1"
+				},
+				{
+					"attributes": {
+						"assetSearchSummary": "A banana\n   is an elongated, edible fruit\n   – botanically a berry\n  [1]\n  [2]\n   – produced by several kinds of large herbaceous\n   flowering plants\n   in the genus\n      Musa\n  .[3]\n   In some...",
+						"fields": {
+							"entryClassName": "com.liferay.blogs.model.BlogsEntry"
+						},
+						"assetURL": "http://localhost:8080/web/guest/search?p_p_id=com_liferay_portal_search_web_search_results_portlet_SearchResultsPortlet&p_p_lifecycle=0&p_p_state=maximized&p_p_mode=view&_com_liferay_portal_search_web_search_results_portlet_SearchResultsPortlet_mvcPath=%2Fview_content.jsp&_com_liferay_portal_search_web_search_results_portlet_SearchResultsPortlet_assetEntryId=41371&_com_liferay_portal_search_web_search_results_portlet_SearchResultsPortlet_type=blog&p_p_auth=4VGqRTs7&p_l_back_url=http%3A%2F%2Flocalhost%3A8080%2Fweb%2Fguest"
+					},
+					"score": 125.30666,
+					"text": "Banana Blog"
+				},
+				{
+					"attributes": {
+						"assetSearchSummary": "",
+						"fields": {
+							"entryClassName": "com.liferay.journal.model.JournalArticle"
+						},
+						"assetURL": "http://localhost:8080/web/guest/search?p_p_id=com_liferay_portal_search_web_search_results_portlet_SearchResultsPortlet&p_p_lifecycle=0&p_p_state=maximized&p_p_mode=view&_com_liferay_portal_search_web_search_results_portlet_SearchResultsPortlet_mvcPath=%2Fview_content.jsp&_com_liferay_portal_search_web_search_results_portlet_SearchResultsPortlet_assetEntryId=41358&_com_liferay_portal_search_web_search_results_portlet_SearchResultsPortlet_type=content&p_p_auth=4VGqRTs7&p_l_back_url=http%3A%2F%2Flocalhost%3A8080%2Fweb%2Fguest"
+					},
+					"score": 20.432076,
+					"text": "Banana 3"
+				},
+				{
+					"attributes": {
+						"assetSearchSummary": "",
+						"fields": {
+							"entryClassName": "com.liferay.journal.model.JournalArticle"
+						},
+						"assetURL": "http://localhost:8080/web/guest/search?p_p_id=com_liferay_portal_search_web_search_results_portlet_SearchResultsPortlet&p_p_lifecycle=0&p_p_state=maximized&p_p_mode=view&_com_liferay_portal_search_web_search_results_portlet_SearchResultsPortlet_mvcPath=%2Fview_content.jsp&_com_liferay_portal_search_web_search_results_portlet_SearchResultsPortlet_assetEntryId=41344&_com_liferay_portal_search_web_search_results_portlet_SearchResultsPortlet_type=content&p_p_auth=4VGqRTs7&p_l_back_url=http%3A%2F%2Flocalhost%3A8080%2Fweb%2Fguest"
+					},
+					"score": 20.432076,
+					"text": "Banana 2"
+				}
+			]
+		}
+	],
+	"lastPage": 1,
+	"page": 1,
+	"pageSize": 1,
+	"totalCount": 1
+}
