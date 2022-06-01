@@ -29,4 +29,17 @@ const Template = (args) => (
 
 export const Default = Template.bind({});
 
-Default.args = {};
+Default.args = {isDXP: true};
+
+export const CEVersion = Template.bind({});
+
+CEVersion.args = {
+	initialSuggestionsContributorConfiguration: JSON.stringify([
+		{
+			contributorName: "basic",
+			displayGroupName: "suggestions",
+			size: 5,
+		},
+	]),
+	isDXP: false,
+};
