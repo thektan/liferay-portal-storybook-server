@@ -5,7 +5,7 @@ import {EditElementDecorator, ThemeContextDecorator} from "../decorators";
 import {QUERY_SXP_ELEMENTS} from "test/js/mocks/data.js";
 
 export default {
-	title: "Components/EditSXPElementForm",
+	title: "Pages/EditSXPElementForm",
 	component: EditSXPElementForm,
 	decorators: [EditElementDecorator, ThemeContextDecorator],
 	parameters: {

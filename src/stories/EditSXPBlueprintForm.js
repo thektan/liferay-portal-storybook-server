@@ -8,7 +8,7 @@ import {ENTITY_JSON, INITIAL_CONFIGURATION} from "../data";
 import {QUERY_SXP_ELEMENTS} from "test/js/mocks/data.js";
 
 export default {
-	title: "Components/EditSXPBlueprintForm",
+	title: "Pages/EditSXPBlueprintForm",
 	component: EditSXPBlueprintForm,
 	decorators: [EditBlueprintDecorator, ThemeContextDecorator],
 	parameters: {
