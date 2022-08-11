@@ -18,4 +18,12 @@ module.exports = function expressMiddleware(router) {
 			target: process.env.PORTAL_URL,
 		})
 	);
+
+	router.use(
+		"/api",
+		createProxyMiddleware({
+			changeOrigin: true,
+			target: process.env.PORTAL_URL,
+		})
+	);
 };
