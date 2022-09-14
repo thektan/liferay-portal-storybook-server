@@ -4,5 +4,5 @@ Runs storybook to test components inside of a liferay-portal module. Currently s
 
 ## Setup
 
-1. Update paths in `.env` to your current environment.
-1. Update `../../liferay-portal-master/portal/` relative paths in `./storybook/preview.js` to where the portal root is located.
+1. In `.env`, update paths to your current environment.
+1. In `./storybook/preview.js`, update `../../liferay-portal-master/portal/` relative paths to where the portal root is located.
