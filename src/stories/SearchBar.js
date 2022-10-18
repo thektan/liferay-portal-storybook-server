@@ -10,7 +10,11 @@ export default {
 };
 
 const Template = (args) => (
-	<SearchBar suggestionsConfiguratorContribution="" {...args} />
+	<SearchBar
+		destinationFriendlyURL="/search"
+		suggestionsConfiguratorContribution=""
+		{...args}
+	/>
 );
 
 export const Default = Template.bind({});
