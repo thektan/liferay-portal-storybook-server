@@ -13,7 +13,7 @@ const Template = (args) => (
 	<SearchBarConfigurationSuggestions
 		initialSuggestionsContributorConfiguration={JSON.stringify([
 			{
-				contributorName: "blueprint",
+				contributorName: "sxpBlueprint",
 				displayGroupName: "suggestions",
 				size: 5,
 				attributes: {
