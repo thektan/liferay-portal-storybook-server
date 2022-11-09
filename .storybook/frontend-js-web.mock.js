@@ -30,6 +30,21 @@ function cancelDebounce(debounced) {
 	clearTimeout(debounced.id);
 }
 
+const REGEX_SUB = /\{\s*([^|}]+?)\s*(?:\|([^}]*))?\s*\}/g;
+
+function sub(string, data) {
+	if (
+		arguments.length > 2 ||
+		(typeof data !== "object" && typeof data !== "function")
+	) {
+		data = Array.prototype.slice.call(arguments, 1);
+	}
+
+	return string.replace(REGEX_SUB, (match, key) =>
+		data[key] === undefined ? match : data[key]
+	);
+}
+
 module.exports = {
 	CompatibilityEventProxy: () => {},
 	DefaultEventHandler: () => {},
@@ -41,6 +56,7 @@ module.exports = {
 	cancelDebounce,
 	debounce,
 	fetch,
+	sub,
 	navigate: (url, listeners) => console.log({listeners, url}),
 	openSimpleInputModal: (config) => console.log(config),
 	openToast: (config) => console.log(config),
