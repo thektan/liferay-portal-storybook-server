@@ -15,6 +15,11 @@ const Template = (args) => (
 			huggingFace: "Hugging Face",
 			txtai: "txtai",
 		}}
+		availableTextTruncationStrategies={{
+			beginning: "Beginning",
+			middle: "Middle",
+			end: "End",
+		}}
 		availableLanguageDisplayNames={{
 			ar_SA: "Arabic (Saudi Arabia)",
 			ca_ES: "Catalan (Spain)",
@@ -39,7 +44,6 @@ const Template = (args) => (
 			"com.liferay.journal.model.JournalArticle": "Web Content Article",
 			"model.resource.com.liferay.wiki.model.WikiPage": "Wiki Page",
 		}}
-		model="meow"
 		{...args}
 	/>
 );
