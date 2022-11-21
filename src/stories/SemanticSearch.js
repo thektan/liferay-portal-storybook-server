@@ -1,6 +1,7 @@
 import React from "react";
 
 import SemanticSearch from "src/main/resources/META-INF/resources/semantic_search/js/configuration/index";
+import learnMessages from "../../static/search-experiences-web.json";
 
 export default {
 	title: "Components/SemanticSearch",
@@ -11,8 +12,8 @@ export default {
 const Template = (args) => (
 	<SemanticSearch
 		availableEmbeddingVectorDimensions={["384", "512", "768"]}
-		availableSentenceTransformProviders={{
-			huggingFace: "Hugging Face",
+		availableSentenceTransformers={{
+			huggingFaceInferenceAPI: "Hugging Face Inference API",
 			txtai: "txtai",
 		}}
 		availableTextTruncationStrategies={{
@@ -44,6 +45,7 @@ const Template = (args) => (
 			"com.liferay.journal.model.JournalArticle": "Web Content Article",
 			"model.resource.com.liferay.wiki.model.WikiPage": "Wiki Page",
 		}}
+		learnMessages={learnMessages}
 		{...args}
 	/>
 );
