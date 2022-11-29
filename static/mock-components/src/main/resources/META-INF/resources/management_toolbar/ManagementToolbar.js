@@ -32,5 +32,3 @@ ManagementToolbar.ResultsBar = ResultsBar;
 ManagementToolbar.ResultsBarItem = ResultsBarItem;
 ManagementToolbar.Search = Search;
 export default ManagementToolbar;
-
-console.log("hello");
