@@ -46,7 +46,7 @@ module.exports = {
 				{
 					loader: "liferay-lang-key-dev-loader",
 					options: {
-						path: path.join(__dirname, "Language.properties"),
+						path: path.join(CWD, "static/Language.properties"),
 					},
 				},
 			],
