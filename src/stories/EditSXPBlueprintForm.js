@@ -5,7 +5,7 @@ import {getUIConfigurationValues} from "src/main/resources/META-INF/resources/sx
 import {EditBlueprintDecorator, ThemeContextDecorator} from "../decorators";
 
 import {ENTITY_JSON, INITIAL_CONFIGURATION} from "../data";
-import {QUERY_SXP_ELEMENTS} from "test/js/mocks/data.js";
+import {QUERY_SXP_ELEMENTS} from "test/js/mocks/sxpElements.js";
 
 export default {
 	title: "Pages/EditSXPBlueprintForm",

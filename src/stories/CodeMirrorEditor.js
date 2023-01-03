@@ -2,7 +2,7 @@ import React from "react";
 
 import CodeMirrorEditor from "src/main/resources/META-INF/resources/sxp_blueprint_admin/js/shared/CodeMirrorEditor";
 import sxpQueryElementSchema from "src/main/resources/META-INF/resources/sxp_blueprint_admin/schemas/sxp-query-element.schema.json";
-import {QUERY_SXP_ELEMENTS} from "test/js/mocks/data.js";
+import {QUERY_SXP_ELEMENTS} from "test/js/mocks/sxpElements.js";
 import {ThemeContextDecorator} from "../decorators";
 
 export default {

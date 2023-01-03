@@ -2,7 +2,7 @@ import React from "react";
 
 import EditSXPElementForm from "src/main/resources/META-INF/resources/sxp_blueprint_admin/js/edit_sxp_element/EditSXPElementForm";
 import {EditElementDecorator, ThemeContextDecorator} from "../decorators";
-import {QUERY_SXP_ELEMENTS} from "test/js/mocks/data.js";
+import {QUERY_SXP_ELEMENTS} from "test/js/mocks/sxpElements.js";
 
 export default {
 	title: "Pages/EditSXPElementForm",
