@@ -7,7 +7,7 @@ import {
 	EditBlueprintDecorator,
 } from "../decorators";
 
-import {QUERY_SXP_ELEMENTS} from "test/js/mocks/data.js";
+import {QUERY_SXP_ELEMENTS} from "test/js/mocks/sxpElements.js";
 import {getUIConfigurationValues} from "src/main/resources/META-INF/resources/sxp_blueprint_admin/js/utils/utils";
 
 export default {
