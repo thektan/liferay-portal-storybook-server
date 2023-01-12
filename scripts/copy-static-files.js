@@ -56,8 +56,8 @@ function copyStaticFiles() {
  * Copies learn resources from portal.
  */
 function copyLearnResourcesFile() {
-	const source = `${process.env.PORTAL_PATH}/learn-resources/search-experiences-web.json`;
-	const destination = `.${process.env.STATIC_PATH}/search-experiences-web.json`;
+	const source = `${process.env.PORTAL_PATH}/learn-resources/portal-search-web.json`;
+	const destination = `.${process.env.STATIC_PATH}/portal-search-web.json`;
 
 	fs.copyFile(source, destination, (error) => {
 		if (error) {
