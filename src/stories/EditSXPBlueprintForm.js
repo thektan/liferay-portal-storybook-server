@@ -1,7 +1,7 @@
 import React from "react";
 
 import EditSXPBlueprintForm from "src/main/resources/META-INF/resources/sxp_blueprint_admin/js/edit_sxp_blueprint/EditSXPBlueprintForm";
-import {getUIConfigurationValues} from "src/main/resources/META-INF/resources/sxp_blueprint_admin/js/utils/utils";
+import getUIConfigurationValues from "src/main/resources/META-INF/resources/sxp_blueprint_admin/js/utils/sxp_element/get_ui_configuration_values";
 import {EditBlueprintDecorator, ThemeContextDecorator} from "../decorators";
 
 import {ENTITY_JSON, INITIAL_CONFIGURATION} from "../data";

@@ -8,7 +8,7 @@ import {
 } from "../decorators";
 
 import {QUERY_SXP_ELEMENTS} from "test/js/mocks/sxpElements.js";
-import {getUIConfigurationValues} from "src/main/resources/META-INF/resources/sxp_blueprint_admin/js/utils/utils";
+import getUIConfigurationValues from "src/main/resources/META-INF/resources/sxp_blueprint_admin/js/utils/sxp_element/get_ui_configuration_values";
 
 export default {
 	title: "Components/SXPElement",

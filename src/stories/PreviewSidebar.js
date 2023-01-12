@@ -3,7 +3,7 @@ import React from "react";
 import PreviewSidebar from "src/main/resources/META-INF/resources/sxp_blueprint_admin/js/edit_sxp_blueprint/preview_sidebar/index";
 import {EditBlueprintDecorator} from "../decorators";
 import {mockSearchResults} from "src/../test/js/mocks/data";
-import {transformToSearchPreviewHits} from "src/main/resources/META-INF/resources/sxp_blueprint_admin/js/utils/utils";
+import transformToSearchPreviewHits from "src/main/resources/META-INF/resources/sxp_blueprint_admin/js/utils/sxp_element/transform_to_search_preview_hits";
 
 const SEARCH_RESULTS = mockSearchResults();
 
