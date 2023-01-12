@@ -13,6 +13,10 @@ const Template = (args) => (
 	<SearchBar
 		destinationFriendlyURL="/search"
 		suggestionsConfiguratorContribution=""
+		letUserChooseScope={true}
+		scopeParameterStringCurrentSite="this-site"
+		scopeParameterStringEverything="everything"
+		suggestionsDisplayThreshold={0}
 		{...args}
 	/>
 );
