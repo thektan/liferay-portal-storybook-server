@@ -29,7 +29,7 @@ const Template = (args) => (
 
 export const Default = Template.bind({});
 
-Default.args = {isDXP: true};
+Default.args = {isDXP: true, isSearchExperiencesSupported: true};
 
 export const CEVersion = Template.bind({});
 
@@ -42,4 +42,19 @@ CEVersion.args = {
 		},
 	]),
 	isDXP: false,
+	isSearchExperiencesSupported: true,
+};
+
+export const Solr = Template.bind({});
+
+Solr.args = {
+	initialSuggestionsContributorConfiguration: JSON.stringify([
+		{
+			contributorName: "basic",
+			displayGroupName: "suggestions",
+			size: 5,
+		},
+	]),
+	isDXP: true,
+	isSearchExperiencesSupported: false,
 };
