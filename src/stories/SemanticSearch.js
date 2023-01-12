@@ -12,7 +12,7 @@ export default {
 const Template = (args) => (
 	<SemanticSearch
 		availableEmbeddingVectorDimensions={["384", "512", "768"]}
-		availableSentenceTransformers={{
+		availableTextEmbeddingProviders={{
 			huggingFaceInferenceAPI: "Hugging Face Inference API",
 			txtai: "txtai",
 		}}
