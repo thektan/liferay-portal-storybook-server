@@ -20,7 +20,7 @@ const Template = (args) => (
 				size: 5,
 				attributes: {
 					fields: ["entryClassName", "title"],
-					includeAssetSummary: false,
+					includeAssetSearchSummary: false,
 					includeAssetURL: true,
 				},
 			},
