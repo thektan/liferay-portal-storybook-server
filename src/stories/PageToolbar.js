@@ -17,11 +17,13 @@ const Template = (args) => <PageToolbar {...args} />;
 export const Default = Template.bind({});
 
 Default.args = {
-	title: {
+	title: "Test Title",
+	titleI18n: {
 		"en-US": "Test Title",
 		"es-ES": "Test Titulo",
 	},
-	description: {
+	description: "Test Description",
+	descriptionI18n: {
 		"en-US": "Test Description",
 		"es-ES": "Test Descripcion",
 	},

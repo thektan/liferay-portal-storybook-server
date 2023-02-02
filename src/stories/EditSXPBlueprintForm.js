@@ -23,11 +23,13 @@ export const AllElements = Template.bind({});
 AllElements.args = {
 	sxpBlueprintId: "1",
 	entityJSON: ENTITY_JSON,
-	initialDescription: {
-		"en-US": "Test Description",
+	initialDescription: "Test Description",
+	initialDescriptionI18n: {
+		"en-US": "test-description",
 	},
-	initialTitle: {
-		"en-US": "Test Title",
+	initialTitle: "Test Title",
+	initialTitleI18n: {
+		"en-US": "test-title",
 	},
 	initialConfiguration: INITIAL_CONFIGURATION,
 	initialSXPElementInstances: QUERY_SXP_ELEMENTS.map((sxpElement) => ({
