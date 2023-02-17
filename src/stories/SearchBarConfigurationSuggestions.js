@@ -1,12 +1,12 @@
 import React from "react";
 
 import SearchBarConfigurationSuggestions from "src/main/resources/META-INF/resources/js/components/SearchBarConfigurationSuggestions";
-import {SearchBarDecorator} from "../decorators";
+import {SearchBarWidgetConfigurationDecorator} from "../decorators";
 import learnMessages from "../../static/portal-search-web.json";
 
 export default {
 	title: "Components/SearchBarConfigurationSuggestions",
-	decorators: [SearchBarDecorator],
+	decorators: [SearchBarWidgetConfigurationDecorator],
 	component: Element,
 };
 

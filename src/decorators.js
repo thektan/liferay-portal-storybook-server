@@ -14,3 +14,11 @@ export const SearchBarDecorator = (Story) => (
 		<Story />
 	</div>
 );
+
+export const SearchBarWidgetConfigurationDecorator = (Story) => (
+	<div className="portlet-search-bar">
+		<div className="sheet sheet-lg">
+			<Story />
+		</div>
+	</div>
+);
