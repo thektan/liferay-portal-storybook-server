@@ -9,13 +9,13 @@ const fs = require("fs-extra");
 /**
  * For fixing the error:
  * Module not found: Error: Can't resolve './@theme_image_path@/states/success_state.gif' in
- * '/Users/ktan/Developer/liferay-portal-master/portal/modules/apps/frontend-theme/frontend-theme-admin/build/css'
+ * '/Users/ktan/Developer/liferay-portal-master/portal/modules/apps/frontend-theme/frontend-theme-classic/build/css'
  *
  * This creates a new folder "@theme_image_path@" in portal build folder.
  */
 function createThemeImagePath() {
-	const source = `${process.env.PORTAL_PATH}/modules/apps/frontend-theme/frontend-theme-admin/build/images`;
-	const destination = `${process.env.PORTAL_PATH}/modules/apps/frontend-theme/frontend-theme-admin/build/css/@theme_image_path@`;
+	const source = `${process.env.PORTAL_PATH}/modules/apps/frontend-theme/frontend-theme-classic/build/images`;
+	const destination = `${process.env.PORTAL_PATH}/modules/apps/frontend-theme/frontend-theme-classic/build/css/@theme_image_path@`;
 
 	if (!fs.existsSync(destination)) {
 		fs.mkdirSync(destination);
