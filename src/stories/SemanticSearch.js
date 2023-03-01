@@ -21,6 +21,7 @@ const Template = (args) => (
 			middle: "Middle",
 			end: "End",
 		}}
+		initialTextEmbeddingProviderConfigurationJSONs={[]}
 		availableLanguageDisplayNames={{
 			ar_SA: "Arabic (Saudi Arabia)",
 			ca_ES: "Catalan (Spain)",
@@ -36,14 +37,15 @@ const Template = (args) => (
 			es_ES: "Spanish (Spain)",
 			sv_SE: "Swedish (Sweden)",
 		}}
-		availableAssetEntryClassNames={{
+		initialTextEmbeddingCacheTimeout={0}
+		availableModelClassNames={{
 			"com.liferay.blogs.model.BlogsEntry": "Blogs Entry",
 			"com.liferay.knowledge.base.model.KBArticle":
 				"Knowledge Base Article",
 			"com.liferay.message.boards.model.MBMessage":
 				"Message Boards Message",
 			"com.liferay.journal.model.JournalArticle": "Web Content Article",
-			"model.resource.com.liferay.wiki.model.WikiPage": "Wiki Page",
+			"com.liferay.wiki.model.WikiPage": "Wiki Page",
 		}}
 		learnMessages={learnMessages}
 		{...args}
