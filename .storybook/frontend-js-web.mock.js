@@ -6,6 +6,8 @@
 /* eslint-disable no-console */
 /* eslint-env browser */
 
+import SessionStorage from "../static/mock-components/src/main/resources/META-INF/resources/util/session_storage";
+
 /**
  * Appends given parameters to the given URL.
  * @param {String | Object} params Parameters to be added on to the base url
@@ -85,7 +87,6 @@ function sub(string, data) {
 }
 
 module.exports = {
-	addParams,
 	CompatibilityEventProxy: () => {},
 	DefaultEventHandler: () => {},
 	ItemSelectorDialog: () => {},
@@ -93,13 +94,15 @@ module.exports = {
 	PortletBase: () => {},
 	Slider: () => {},
 	Treeview: () => {},
+	addParams,
 	cancelDebounce,
 	debounce,
 	fetch,
-	sub,
 	navigate: (url, listeners) => console.log({listeners, url}),
 	openSimpleInputModal: (config) => console.log(config),
 	openToast: (config) => console.log(config),
+	sessionStorage: SessionStorage,
+	sub,
 };
 
 /* eslint-enable no-console */
