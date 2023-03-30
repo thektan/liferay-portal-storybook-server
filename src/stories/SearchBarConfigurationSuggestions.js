@@ -15,8 +15,13 @@ const Template = (args) => (
 		learnMessages={learnMessages}
 		initialSuggestionsContributorConfiguration={JSON.stringify([
 			{
-				contributorName: "sxpBlueprint",
+				contributorName: "basic",
 				displayGroupName: "suggestions",
+				size: 5,
+			},
+			{
+				contributorName: "sxpBlueprint",
+				displayGroupName: "blueprint",
 				size: 5,
 				attributes: {
 					fields: ["entryClassName", "title"],
