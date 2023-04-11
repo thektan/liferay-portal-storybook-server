@@ -75,6 +75,13 @@ module.exports = {
 			)
 		);
 
+		config.resolve.alias["atlas-variables"] = require.resolve(
+			path.join(
+				process.env.PORTAL_PATH,
+				"/modules/apps/frontend-theme/frontend-theme-classic/build/css/clay/atlas-variables.scss"
+			)
+		);
+
 		return config;
 	},
 };
