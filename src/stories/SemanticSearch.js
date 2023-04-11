@@ -14,6 +14,7 @@ const Template = (args) => (
 		availableEmbeddingVectorDimensions={["384", "512", "768"]}
 		availableTextEmbeddingProviders={{
 			huggingFaceInferenceAPI: "Hugging Face Inference API",
+			huggingFaceInferenceEndpoint: "Hugging Face Inference Endpoint",
 			txtai: "txtai",
 		}}
 		availableTextTruncationStrategies={{
@@ -21,6 +22,7 @@ const Template = (args) => (
 			middle: "Middle",
 			end: "End",
 		}}
+		initialTextEmbeddingsEnabled={true}
 		initialTextEmbeddingProviderConfigurationJSONs={[]}
 		availableLanguageDisplayNames={{
 			ar_SA: "Arabic (Saudi Arabia)",
