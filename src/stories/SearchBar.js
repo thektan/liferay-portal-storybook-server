@@ -12,11 +12,20 @@ export default {
 const Template = (args) => (
 	<SearchBar
 		destinationFriendlyURL="/search"
-		suggestionsConfiguratorContribution=""
 		letUserChooseScope={true}
 		scopeParameterStringCurrentSite="this-site"
 		scopeParameterStringEverything="everything"
-		suggestionsDisplayThreshold={0}
+		suggestionsContributorConfiguration={JSON.stringify([
+			{
+				contributorName: "basic",
+				displayGroupName: "suggestions",
+				size: 5,
+				attributes: {
+					characterThreshold: "3",
+				},
+			},
+		])}
+		suggestionsDisplayThreshold={3}
 		{...args}
 	/>
 );
