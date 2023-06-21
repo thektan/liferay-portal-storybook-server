@@ -80,6 +80,13 @@ module.exports = {
 			)
 		);
 
+		config.resolve.alias["cadmin-variables"] = require.resolve(
+			path.join(
+				process.env.PORTAL_PATH,
+				"/modules/apps/frontend-theme/frontend-theme-classic/build/css/clay/_cadmin-variables.scss"
+			)
+		);
+
 		return config;
 	},
 };
