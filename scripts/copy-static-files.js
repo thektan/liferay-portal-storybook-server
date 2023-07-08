@@ -52,24 +52,5 @@ function copyStaticFiles() {
 	});
 }
 
-/**
- * Copies learn resources from portal.
- */
-function copyLearnResourcesFile() {
-	const source = `${process.env.PORTAL_PATH}/learn-resources/search-experiences-web.json`;
-	const destination = `.${process.env.STATIC_PATH}/search-experiences-web.json`;
-
-	fs.copyFile(source, destination, (error) => {
-		if (error) {
-			console.error(error);
-		}
-
-		console.log(`📝 Successfully copied:`);
-		console.log(`Source: ${source}`);
-		console.log(`Destination: ${destination}`);
-	});
-}
-
 copyStaticFiles();
 createThemeImagePath();
-copyLearnResourcesFile();

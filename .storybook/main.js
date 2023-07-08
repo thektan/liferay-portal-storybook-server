@@ -29,18 +29,15 @@ module.exports = {
 	webpackFinal: async (config) => {
 		config.resolve.modules = [
 			...(config.resolve.modules || []),
-			path.resolve(process.env.PORTAL_NODE_MODULES),
+			path.resolve(process.env.LEARN_RESOURCES_PATH),
+			path.resolve(process.env.PORTAL_NODE_MODULES_PATH),
 			path.resolve(process.env.MODULE_PATH),
-			path.resolve(process.env.RANKINGS_MODULE_PATH),
 		];
 
 		// Include module components to run babel on. Path from where the
 		// `yarn storybook` command is run.
 		config.module.rules[0].include.push(
 			path.resolve(process.env.MODULE_PATH)
-		);
-		config.module.rules[0].include.push(
-			path.resolve(process.env.RANKINGS_MODULE_PATH)
 		);
 
 		config.module.rules.push({
