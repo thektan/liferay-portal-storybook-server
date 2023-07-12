@@ -30,6 +30,7 @@ module.exports = {
 		config.resolve.modules = [
 			...(config.resolve.modules || []),
 			path.resolve(process.env.LEARN_RESOURCES_PATH),
+			path.resolve(process.env.PORTAL_CSS_PATH),
 			path.resolve(process.env.PORTAL_NODE_MODULES_PATH),
 			path.resolve(process.env.MODULE_PATH),
 		];
