@@ -1,4 +1,18 @@
 <script>
+	var themeDisplay = {
+		getBCP47LanguageId: () => "en-US",
+		getCompanyId: () => "0",
+		getDefaultLanguageId: () => "en_US",
+		getLanguageId: () => "en-US",
+		getLayoutRelativeURL: () => "",
+		getPortalURL: () => "http://localhost:9000",
+		getPathContext: () => "",
+		getScopeGroupId: () => "0",
+		getSiteGroupId: () => "0",
+		getPlid: () => "",
+		getUserId: () => "0",
+	};
+
 	var Liferay = {
 		component: () => {},
 		destroyComponent: () => {},
@@ -22,16 +36,7 @@
 			},
 		},
 		on: () => {},
-		ThemeDisplay: {
-			getBCP47LanguageId: () => "en-US",
-			getCompanyId: () => "0",
-			getDefaultLanguageId: () => "en_US",
-			getLanguageId: () => "en-US",
-			getPortalURL: () => "http://localhost:9000",
-			getPathContext: () => "",
-			getScopeGroupId: () => "",
-			getPlid: () => "",
-		},
+		ThemeDisplay: themeDisplay,
 		Util: {
 			sub: (key, ...values) => {
 				return values.reduce(
