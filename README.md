@@ -1,6 +1,8 @@
 # Storybook Server for a Liferay Portal module
 
-Runs storybook to test components inside of a liferay-portal module. Currently setup to test components in `search-experiences-web`. This allows for quickly isolating and developing react components with hot deploy.
+Runs storybook to test components inside of a liferay-portal module. This allows for quickly isolating and developing react components with hot deploy.
+
+Currently setup to test components in `frontend-js-walkthrough-web`.
 
 ## Setup
 
