@@ -4,8 +4,51 @@
  */
 
 const React = require("react");
+import classNames from "classnames";
+import {createPortal} from "react-dom";
 
 module.exports = {
+	ReactPortal: React.forwardRef(
+		(
+			{
+				children,
+				className,
+				container,
+				id,
+				wrapper: Wrapper = "div",
+				...otherProps
+			},
+			ref
+		) => {
+			const cssClass = classNames("lfr-tooltip-scope", className);
+
+			let content;
+
+			if (Wrapper) {
+				content = (
+					<Wrapper
+						className={cssClass}
+						id={id}
+						ref={ref}
+						{...otherProps}
+					>
+						{children}
+					</Wrapper>
+				);
+			} else if (
+				React.isValidElement(children) &&
+				React.Children.only(children)
+			) {
+				content = React.cloneElement(children, {
+					className: classNames(cssClass, children.props.className),
+					id,
+				});
+			}
+
+			return createPortal(content, container || document.body);
+		}
+	),
+
 	// See: https://github.com/liferay/liferay-portal/blob/18f9aefe633dbb4364b7ebc82a17b9e124d764ac/modules/apps/frontend-js/frontend-js-react-web/src/main/resources/META-INF/resources/js/hooks/useIsMounted.ts
 
 	useIsMounted: () => {
