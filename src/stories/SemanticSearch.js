@@ -1,7 +1,7 @@
 import React from "react";
 
 import SemanticSearch from "src/main/resources/META-INF/resources/semantic_search/js/configuration/index";
-import learnMessages from "../../static/search-experiences-web.json";
+import learnMessages from "../../static/learn-resources/search-experiences-web.json";
 
 export default {
 	title: "Components/SemanticSearch",
