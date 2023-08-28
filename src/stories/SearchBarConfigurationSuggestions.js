@@ -2,7 +2,7 @@ import React from "react";
 
 import SearchBarConfigurationSuggestions from "src/main/resources/META-INF/resources/js/components/search_bar_configuration_suggestions/index";
 import {SearchBarWidgetConfigurationDecorator} from "../decorators";
-import learnMessages from "../../static/portal-search-web.json";
+import learnMessages from "../../static/learn-resources/portal-search-web.json";
 
 export default {
 	title: "Components/SearchBarConfigurationSuggestions",

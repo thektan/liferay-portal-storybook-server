@@ -2,7 +2,6 @@ import React from "react";
 
 import SuggestionContributorAddButton from "src/main/resources/META-INF/resources/js/components/search_bar_configuration_suggestions/SuggestionContributorAddButton";
 import {SearchBarWidgetConfigurationDecorator} from "../decorators";
-import learnMessages from "../../static/portal-search-web.json";
 import ClayDropDown from "@clayui/drop-down";
 
 export default {
