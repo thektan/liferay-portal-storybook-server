@@ -52,5 +52,28 @@ function copyStaticFiles() {
 	});
 }
 
+/**
+ * Copies learn resources from portal.
+ */
+function copyLearnResourcesFile(learnResourcesList) {
+	learnResourcesList.forEach((resource) => {
+		const source = `${process.env.PORTAL_PATH}/learn-resources/${resource}.json`;
+		const destination = `.${process.env.STATIC_PATH}/learn-resources/${resource}.json`;
+
+		fs.copyFile(source, destination, (error) => {
+			if (error) {
+				console.error(error);
+			}
+
+			console.log(`📝 Successfully copied:`);
+			console.log(`Source: ${source}`);
+			console.log(`Destination: ${destination}`);
+		});
+	});
+}
+
 copyStaticFiles();
 createThemeImagePath();
+copyLearnResourcesFile([
+	"search-experiences-web", // Add desired learn resources here
+]);

@@ -1,4 +1,4 @@
-import learnMessages from "../static/search-experiences-web.json";
+import learnMessages from "../static/learn-resources/search-experiences-web.json";
 
 /**
  * @see ThemeContextDecorator in {@link ./decorators.js}
