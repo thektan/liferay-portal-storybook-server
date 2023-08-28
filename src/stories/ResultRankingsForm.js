@@ -5,10 +5,12 @@ import React from "react";
 
 import ResultRankingsForm from "src/main/resources/META-INF/resources/js/components/ResultRankingsForm.es.js";
 import "src/main/resources/META-INF/resources/css/main.scss";
+import {LearnResourcesContextDecorator} from "../decorators";
 
 export default {
 	title: "ResultRankings/ResultRankings",
 	component: ResultRankingsForm,
+	decorators: [LearnResourcesContextDecorator],
 };
 
 const Template = (args) => (
@@ -23,6 +25,8 @@ const Template = (args) => (
 			initialInactive={false}
 			saveActionUrl="#"
 			searchQuery={"Search Term"}
+			initialSXPBlueprintExternalReferenceCode=""
+			initialGroupExternalReferenceCode=""
 			status={1}
 			validateFormUrl="http://www.mocky.io/v2/5d9dfbea3200008407329b6f"
 			{...args}
