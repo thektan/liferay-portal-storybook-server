@@ -16,19 +16,18 @@ export default {
 const Template = (args) => (
 	<div className="result-rankings-root">
 		<ResultRankingsForm
-			cancelUrl=""
-			fetchDocumentsHiddenUrl="http://www.mocky.io/v2/5e8366a4300000580fcf3df1"
-			fetchDocumentsSearchUrl="http://www.mocky.io/v2/5e83720e3000007612cf3e32"
-			fetchDocumentsVisibleUrl="http://www.mocky.io/v2/5ea0e59d320000204394b198"
+			cancelURL=""
+			fetchDocumentsHiddenURL="http://www.mocky.io/v2/5e8366a4300000580fcf3df1"
+			fetchDocumentsSearchURL="http://www.mocky.io/v2/5e83720e3000007612cf3e32"
+			fetchDocumentsVisibleURL="http://www.mocky.io/v2/5ea0e59d320000204394b198"
 			formName="testFm"
 			initialAliases={[]}
-			initialInactive={false}
-			saveActionUrl="#"
-			searchQuery={"Search Term"}
-			initialSXPBlueprintExternalReferenceCode=""
 			initialGroupExternalReferenceCode=""
+			initialInactive={false}
+			initialSXPBlueprintExternalReferenceCode=""
+			searchQuery={"Search Term"}
 			status={1}
-			validateFormUrl="http://www.mocky.io/v2/5d9dfbea3200008407329b6f"
+			validateFormURL="http://www.mocky.io/v2/5d9dfbea3200008407329b6f"
 			{...args}
 		/>
 	</div>
@@ -42,5 +41,5 @@ export const MoreResultRankings = Template.bind({});
 
 MoreResultRankings.args = {
 	initialAliases: ["one", "two", "three"],
-	validateFormUrl: "",
+	validateFormURL: "",
 };
