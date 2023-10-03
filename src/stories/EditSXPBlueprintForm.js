@@ -22,6 +22,7 @@ export const AllElements = Template.bind({});
 
 AllElements.args = {
 	sxpBlueprintId: "1",
+	initialExternalReferenceCode: "ERC_TEST",
 	entityJSON: ENTITY_JSON,
 	initialDescription: "Test Description",
 	initialDescriptionI18n: {
