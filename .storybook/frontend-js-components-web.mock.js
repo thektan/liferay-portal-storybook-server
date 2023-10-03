@@ -11,11 +11,13 @@ import Treeview from "../static/mock-components/src/main/resources/META-INF/reso
 import {
 	default as LearnMessage,
 	LearnMessageProvider,
+	LearnResourcesContext,
 } from "../static/mock-components/src/main/resources/META-INF/resources/learn_message/LearnMessage";
 
 module.exports = {
 	LearnMessage,
 	LearnMessageProvider,
+	LearnResourcesContext,
 	ManagementToolbar,
 	TranslationAdminSelector,
 	Treeview,
