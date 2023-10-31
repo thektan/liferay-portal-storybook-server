@@ -7,6 +7,7 @@
 /* eslint-env browser */
 
 import SessionStorage from "../static/mock-components/src/main/resources/META-INF/resources/util/session_storage";
+import {checkConsent} from "../static/mock-components/src/main/resources/META-INF/resources/util/consent";
 
 /**
  * Appends given parameters to the given URL.
@@ -96,6 +97,7 @@ module.exports = {
 	Treeview: () => {},
 	addParams,
 	cancelDebounce,
+	checkConsent,
 	debounce,
 	fetch,
 	navigate: (url, listeners) => console.log({listeners, url}),
