@@ -2,7 +2,7 @@ import React from "react";
 
 import SortConfigurationOptions from "src/main/resources/META-INF/resources/js/components/SortConfigurationOptions";
 import {SortDecorator} from "../decorators";
-import learnMessages from "../../static/learn-resources/portal-search-web.json";
+import portalSearchWeb from "../../static/learn-resources/portal-search-web.json";
 
 export default {
 	title: "Components/SortConfigurationOptions",
@@ -11,7 +11,10 @@ export default {
 };
 
 const Template = (args) => (
-	<SortConfigurationOptions learnMessages={learnMessages} {...args} />
+	<SortConfigurationOptions
+		learnResources={{"portal-search-web": portalSearchWeb}}
+		{...args}
+	/>
 );
 
 export const Default = Template.bind({});
