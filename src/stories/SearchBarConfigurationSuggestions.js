@@ -65,3 +65,21 @@ Solr.args = {
 	isDXP: true,
 	isSearchExperiencesSupported: false,
 };
+
+export const SiteActivities = Template.bind({});
+
+SiteActivities.args = {
+	initialSuggestionsContributorConfiguration: JSON.stringify([
+		{
+			attributes: {
+				characterThreshold: "0",
+				matchDisplayLanguageId: "false",
+			},
+			contributorName: "recentSearchesUserActivity",
+			displayGroupName: "recent-searches",
+			size: "4",
+		},
+	]),
+	isDXP: true,
+	isSearchExperiencesSupported: true,
+};
