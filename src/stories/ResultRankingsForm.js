@@ -23,7 +23,7 @@ const Template = (args) => (
 			formName="testFm"
 			initialAliases={[]}
 			initialGroupExternalReferenceCode=""
-			initialInactive={false}
+			initialStatus="active"
 			initialSXPBlueprintExternalReferenceCode=""
 			searchQuery={"Search Term"}
 			status={1}
@@ -41,5 +41,21 @@ export const MoreResultRankings = Template.bind({});
 
 MoreResultRankings.args = {
 	initialAliases: ["one", "two", "three"],
+	validateFormURL: "",
+};
+
+export const InactiveResultRankings = Template.bind({});
+
+InactiveResultRankings.args = {
+	initialAliases: ["one", "two", "three"],
+	initialStatus: "inactive",
+	validateFormURL: "",
+};
+
+export const NotApplicableResultRankings = Template.bind({});
+
+NotApplicableResultRankings.args = {
+	initialAliases: ["one", "two", "three"],
+	initialStatus: "not-applicable",
 	validateFormURL: "",
 };
