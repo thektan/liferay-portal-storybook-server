@@ -13,8 +13,10 @@ import {
 	LearnMessageProvider,
 	LearnResourcesContext,
 } from "../static/mock-components/src/main/resources/META-INF/resources/learn_message/LearnMessage";
+import FeatureIndicator from "../static/mock-components/src/main/resources/META-INF/resources/feature_indicator/FeatureIndicator";
 
 module.exports = {
+	FeatureIndicator,
 	LearnMessage,
 	LearnMessageProvider,
 	LearnResourcesContext,
