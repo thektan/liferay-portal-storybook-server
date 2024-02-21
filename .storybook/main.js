@@ -77,6 +77,13 @@ module.exports = {
 			)
 		);
 
+		config.plugins.push(
+			new webpack.NormalModuleReplacementPlugin(
+				/@liferay\/frontend-js-codemirror-web/,
+				path.join(__dirname, "frontend-js-codemirror-web.mock.js")
+			)
+		);
+
 		config.resolve.alias["atlas-variables"] = require.resolve(
 			path.join(
 				process.env.PORTAL_PATH,
