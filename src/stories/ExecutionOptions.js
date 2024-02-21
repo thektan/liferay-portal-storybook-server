@@ -9,9 +9,8 @@ export default {
 
 const Template = (args) => (
 	<ExecutionOptions
-		initialExecutionMode=""
-		initialScope=""
-		isConcurrentModeSupported={true}
+		concurrentModeSupported={true}
+		omniadmin={true}
 		portletNamespace=""
 		{...args}
 	/>
