@@ -15,6 +15,7 @@ export default {
 const Template = (args) => (
 	<ResultRankingsAdd
 		cancelURL=""
+		enterpriseSearchEnabled={true}
 		learnResources={{
 			["portal-search-tuning-rankings-web"]: portalSearchTuningRankingsWeb,
 		}}
