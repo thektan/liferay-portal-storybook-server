@@ -77,6 +77,13 @@ module.exports = {
 
 		config.plugins.push(
 			new webpack.NormalModuleReplacementPlugin(
+				/asset-taglib/,
+				path.join(__dirname, "asset-taglib.mock.js")
+			)
+		);
+
+		config.plugins.push(
+			new webpack.NormalModuleReplacementPlugin(
 				/@liferay\/frontend-js-codemirror-web/,
 				path.join(__dirname, "frontend-js-codemirror-web.mock.js")
 			)
