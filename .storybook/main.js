@@ -32,6 +32,7 @@ module.exports = {
 			path.resolve(process.env.PORTAL_NODE_MODULES),
 			path.resolve(process.env.MODULE_PATH),
 			path.resolve(process.env.RANKINGS_MODULE_PATH),
+			path.resolve(process.env.SYNONYMS_MODULE_PATH),
 		];
 
 		// Include module components to run babel on. Path from where the
@@ -41,6 +42,9 @@ module.exports = {
 		);
 		config.module.rules[0].include.push(
 			path.resolve(process.env.RANKINGS_MODULE_PATH)
+		);
+		config.module.rules[0].include.push(
+			path.resolve(process.env.SYNONYMS_MODULE_PATH)
 		);
 
 		config.module.rules.push({
