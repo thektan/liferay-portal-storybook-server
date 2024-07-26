@@ -21,7 +21,7 @@ import TranslationAdminModal from './TranslationAdminModal';
 // These variables are defined here, out of the component, to avoid
 // unexpected re-renders
 const noop = () => { };
-export default function TranslationAdminSelector({ activeLanguageIds: initialActiveLanguageIds = [], adminMode, ariaLabels = {
+export default function ({ activeLanguageIds: initialActiveLanguageIds = [], adminMode, ariaLabels = {
     default: Liferay.Language.get('default'),
     manageTranslations: Liferay.Language.get('manage-translations'),
     notTranslated: Liferay.Language.get('not-translated'),
