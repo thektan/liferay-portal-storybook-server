@@ -1,10 +1,9 @@
-const dotenv = require("dotenv");
-const dotenvExpand = require("dotenv-expand");
+import dotenv from "dotenv";
+import dotenvExpand from "dotenv-expand";
+import fs from "fs-extra";
 
 const myEnv = dotenv.config();
-dotenvExpand(myEnv);
-
-const fs = require("fs-extra");
+dotenvExpand.expand(myEnv);
 
 /**
  * For fixing the error:

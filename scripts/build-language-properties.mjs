@@ -1,11 +1,14 @@
-const dotenv = require("dotenv");
-const dotenvExpand = require("dotenv-expand");
+import dotenv from "dotenv";
+import dotenvExpand from "dotenv-expand";
+import fs from "fs";
+import path, {dirname} from "path";
+import {fileURLToPath} from "url";
 
 const myEnv = dotenv.config();
-dotenvExpand(myEnv);
+dotenvExpand.expand(myEnv);
 
-const fs = require("fs");
-const path = require("path");
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
 
 /**
  * Combine multiple Language.properties files to a single file for
