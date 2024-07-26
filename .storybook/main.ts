@@ -17,6 +17,14 @@ dotenvExpand.expand(myEnv);
 
 const CWD = process.cwd();
 
+const portalPath = process.env.PORTAL_PATH || path.resolve(CWD, "../portal");
+
+const cssPath = `${portalPath}/modules/apps/frontend-theme/frontend-theme-admin/build/css/clay`;
+const nodeModulePath = `${portalPath}/modules/node_modules`;
+const sxpPath = `${portalPath}/modules/dxp/apps/search-experiences/search-experiences-web`;
+const rankingsPath = `${portalPath}/modules/dxp/apps/portal-search-tuning/portal-search-tuning-rankings-web`;
+const synonymsPath = `${portalPath}/modules/dxp/apps/portal-search-tuning/portal-search-tuning-synonyms-web`;
+
 const config: StorybookConfig = {
     stories: [
 		"../src/stories/**/*.mdx",
@@ -40,24 +48,24 @@ const config: StorybookConfig = {
 					...(config?.resolve?.alias || {}),
 					"atlas-variables": require.resolve(
 						path.join(
-							process.env.PORTAL_PATH,
+							portalPath,
 							"/modules/apps/frontend-theme/frontend-theme-classic/build/css/clay/atlas-variables.scss"
 						)
 					),
 					"cadmin-variables": require.resolve(
 						path.join(
-							process.env.PORTAL_PATH,
+							portalPath,
 							"/modules/apps/frontend-theme/frontend-theme-classic/build/css/clay/_cadmin-variables.scss"
 						)
 					),
 				},
 				modules: [
 					...config.resolve?.modules || [],
-					path.resolve(process.env.PORTAL_CSS_PATH),
-					path.resolve(process.env.PORTAL_NODE_MODULES),
-					path.resolve(process.env.MODULE_PATH),
-					path.resolve(process.env.RANKINGS_MODULE_PATH),
-					path.resolve(process.env.SYNONYMS_MODULE_PATH),
+					path.resolve(cssPath),
+					path.resolve(nodeModulePath),
+					path.resolve(sxpPath),
+					path.resolve(rankingsPath),
+					path.resolve(synonymsPath),
 				]
 
 			},
@@ -70,9 +78,9 @@ const config: StorybookConfig = {
 					...config.module?.rules || [],
 					{
 						include: [
-							path.resolve(process.env.MODULE_PATH),
-							path.resolve(process.env.RANKINGS_MODULE_PATH),
-							path.resolve(process.env.SYNONYMS_MODULE_PATH),
+							path.resolve(sxpPath),
+							path.resolve(rankingsPath),
+							path.resolve(synonymsPath),
 						]
 					},
 					{
