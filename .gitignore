@@ -23,3 +23,7 @@ yarn-debug.log*
 yarn-error.log*
 
 .vscode
+
+# static files
+/static/Language.properties
+/static/icons.svg
