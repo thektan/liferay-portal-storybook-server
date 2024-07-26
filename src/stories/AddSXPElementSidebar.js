@@ -5,7 +5,7 @@ import AddSXPElementSidebar from "src/main/resources/META-INF/resources/sxp_blue
 import {EditBlueprintDecorator, ThemeContextDecorator} from "../decorators";
 
 export default {
-	title: "Components/AddSXPElementSidebar",
+	title: "SXP/Components/AddSXPElementSidebar",
 	component: AddSXPElementSidebar,
 	decorators: [EditBlueprintDecorator, ThemeContextDecorator],
 	argTypes: {

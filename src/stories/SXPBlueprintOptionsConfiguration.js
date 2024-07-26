@@ -6,7 +6,7 @@ import learnMessages from "../../static/learn-resources/search-experiences-web.j
 import "src/main/resources/META-INF/resources/sxp_blueprint_options/css/main.scss";
 
 export default {
-	title: "Components/SXPBlueprintOptionsConfiguration",
+	title: "Configuration/SXPBlueprintOptionsConfiguration",
 	component: Configuration,
 	args: {
 		learnMessages,

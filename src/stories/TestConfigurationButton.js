@@ -3,7 +3,7 @@ import React from "react";
 import TestConfigurationButton from "src/main/resources/META-INF/resources/semantic_search/js/configuration/TestConfigurationButton";
 
 export default {
-	title: "Components/TestConfigurationButton",
+	title: "SemanticSearch/TestConfigurationButton",
 	component: TestConfigurationButton,
 };
 

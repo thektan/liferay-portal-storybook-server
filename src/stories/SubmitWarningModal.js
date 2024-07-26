@@ -7,7 +7,7 @@ import SubmitWarningModal from "src/main/resources/META-INF/resources/sxp_bluepr
 import {SXP_BLUEPRINT_ERRORS} from "../data/errors";
 
 export default {
-	title: "Components/SubmitWarningModal",
+	title: "SXP/Components/SubmitWarningModal",
 	parameters: {
 		layout: "fullscreen",
 	},

@@ -4,7 +4,7 @@ import AddSXPBlueprintModal from "src/main/resources/META-INF/resources/sxp_blue
 import {EditBlueprintDecorator} from "../decorators";
 
 export default {
-	title: "Components/AddSXPBlueprintModal",
+	title: "SXP/Components/AddSXPBlueprintModal",
 	decorators: [EditBlueprintDecorator],
 	parameters: {
 		layout: "fullscreen",

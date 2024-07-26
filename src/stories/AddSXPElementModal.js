@@ -4,7 +4,7 @@ import AddSXPElementModal from "src/main/resources/META-INF/resources/sxp_bluepr
 import {EditBlueprintDecorator} from "../decorators";
 
 export default {
-	title: "Components/AddSXPElementModal",
+	title: "SXP/Components/AddSXPElementModal",
 	decorators: [EditBlueprintDecorator],
 	parameters: {
 		layout: "fullscreen",

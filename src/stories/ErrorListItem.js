@@ -4,7 +4,7 @@ import ErrorListItem from "src/main/resources/META-INF/resources/sxp_blueprint_a
 import {SXP_BLUEPRINT_ERRORS, SXP_ELEMENT_ERRORS} from "../data/errors";
 
 export default {
-	title: "Components/ErrorListItem",
+	title: "SXP/Components/ErrorListItem",
 	component: ErrorListItem,
 };
 

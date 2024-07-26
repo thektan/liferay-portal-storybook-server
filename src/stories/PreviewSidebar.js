@@ -8,7 +8,7 @@ import transformToSearchPreviewHits from "src/main/resources/META-INF/resources/
 const SEARCH_RESULTS = mockSearchResults();
 
 export default {
-	title: "Components/PreviewSidebar",
+	title: "SXP/Components/PreviewSidebar",
 	decorators: [EditBlueprintDecorator],
 	parameters: {
 		layout: "fullscreen",

@@ -4,7 +4,7 @@ import PageToolbar from "src/main/resources/META-INF/resources/sxp_blueprint_adm
 import {EditBlueprintDecorator, ThemeContextDecorator} from "../decorators";
 
 export default {
-	title: "Components/PageToolbar",
+	title: "SXP/Components/PageToolbar",
 	decorators: [EditBlueprintDecorator, ThemeContextDecorator],
 	parameters: {
 		layout: "fullscreen",

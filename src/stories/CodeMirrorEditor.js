@@ -6,7 +6,7 @@ import {QUERY_SXP_ELEMENTS} from "test/js/mocks/sxpElements.js";
 import {ThemeContextDecorator} from "../decorators";
 
 export default {
-	title: "Components/CodeMirrorEditor",
+	title: "SXP/Components/CodeMirrorEditor",
 	component: CodeMirrorEditor,
 	decorators: [ThemeContextDecorator],
 };

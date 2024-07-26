@@ -4,7 +4,7 @@ import SemanticSearch from "src/main/resources/META-INF/resources/semantic_searc
 import learnMessages from "../../static/learn-resources/search-experiences-web.json";
 
 export default {
-	title: "Components/SemanticSearch",
+	title: "SemanticSearch/SemanticSearch",
 	component: SemanticSearch,
 	argTypes: {onChange: {action: "changed"}, onEnter: {action: "enter"}},
 };
