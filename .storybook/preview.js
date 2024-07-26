@@ -33,3 +33,4 @@ export const decorators = [
 		</div>
 	),
 ];
+export const tags = ["autodocs"];
