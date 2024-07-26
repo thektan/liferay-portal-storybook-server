@@ -15,7 +15,7 @@ import ClayModal, { useModal } from '@clayui/modal';
 import React, { useEffect, useState } from 'react';
 import TranslationAdminContent from './TranslationAdminContent';
 const noop = () => { };
-export default function TranslationAdminModal({ activeLanguageIds: initialActiveLanguageIds = [], ariaLabels = {
+export default function ({ activeLanguageIds: initialActiveLanguageIds = [], ariaLabels = {
     default: Liferay.Language.get('default'),
     manageTranslations: Liferay.Language.get('manage-translations'),
     notTranslated: Liferay.Language.get('not-translated'),
