@@ -10,20 +10,14 @@ const path = require("path");
 /**
  * Middleware to proxy portal resources.
  */
-module.exports = function expressMiddleware(router) {
-	router.use(
-		"/o",
-		createProxyMiddleware({
-			changeOrigin: true,
-			target: process.env.PORTAL_URL,
-		})
-	);
+module.exports = function expressMiddleware(app) {
+	const pathFilter =  (path) => {
+	  return path.match('^/o') || path.match('^/api');
+	};
 
-	router.use(
-		"/api",
-		createProxyMiddleware({
-			changeOrigin: true,
-			target: process.env.PORTAL_URL,
-		})
-	);
+	app.use(createProxyMiddleware({
+		changeOrigin: true,
+		target: process.env.PORTAL_URL,
+		pathFilter
+	}));
 };

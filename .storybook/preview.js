@@ -31,3 +31,4 @@ export const decorators = [
 		</ClayIconSpriteContext.Provider>
 	),
 ];
+export const tags = ["autodocs"];
