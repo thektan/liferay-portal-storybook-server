@@ -20,7 +20,7 @@ import ClayModal from '@clayui/modal';
 import ClayTable from '@clayui/table';
 import React, { useMemo, useState } from 'react';
 const noop = () => { };
-export default function TranslationAdminContent({ ariaLabels = {
+export default function ({ ariaLabels = {
     default: Liferay.Language.get('default'),
     manageTranslations: Liferay.Language.get('manage-translations'),
     managementToolbar: Liferay.Language.get('management-toolbar'),
