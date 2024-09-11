@@ -78,21 +78,6 @@ const config: StorybookConfig = {
 						],
 					},
 					{
-						test: /\.(?:js|mjs|cjs)$/,
-						exclude: /node_modules/,
-						use: {
-							loader: "babel-loader",
-							options: {
-								presets: [
-									[
-										"@babel/preset-env",
-										{targets: "defaults"},
-									],
-								],
-							},
-						},
-					},
-					{
 						exclude: /node_modules/,
 						test: /\.js$/,
 						use: [
@@ -106,6 +91,21 @@ const config: StorybookConfig = {
 								},
 							},
 						],
+					},
+					{
+						test: /\.(?:js|mjs|cjs)$/,
+						exclude: /node_modules/,
+						use: {
+							loader: "babel-loader",
+							options: {
+								presets: [
+									[
+										"@babel/preset-env",
+										{targets: "defaults"},
+									],
+								],
+							},
+						},
 					},
 				],
 			},
