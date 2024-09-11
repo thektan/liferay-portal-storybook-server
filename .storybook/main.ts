@@ -4,8 +4,8 @@
  *
  * https://storybook.js.org/docs/react/configure/overview#configure-story-rendering
  */
-import type { StorybookConfig } from '@storybook/react-webpack5';
-import type { Indexer } from '@storybook/types';
+import type {StorybookConfig} from "@storybook/react-webpack5";
+import type {Indexer} from "@storybook/types";
 
 import dotenv from "dotenv";
 import dotenvExpand from "dotenv-expand";
@@ -25,21 +25,20 @@ const rankingsPath = `${portalPath}/modules/dxp/apps/portal-search-tuning/portal
 const synonymsPath = `${portalPath}/modules/dxp/apps/portal-search-tuning/portal-search-tuning-synonyms-web`;
 
 const config: StorybookConfig = {
-    stories: [
+	stories: [
 		"../src/stories/**/*.mdx",
 		"../src/stories/**/*.@(js|jsx|ts|tsx)",
 		"../src/stories/**/*.stories.@(js|jsx|ts|tsx)", // Matches existing indexer
 	],
 
-    addons: [
-        "@storybook/addon-links",
-        "@storybook/addon-essentials",
-        "@storybook/preset-scss",
-        "@storybook/addon-webpack5-compiler-babel"
-    ],
+	addons: [
+		"@storybook/addon-links",
+		"@storybook/addon-essentials",
+		"@storybook/preset-scss",
+		"@storybook/addon-webpack5-compiler-babel",
+	],
 
-    webpackFinal: async (config) => {
-
+	webpackFinal: async (config) => {
 		const newConfig = {
 			...config,
 			resolve: {
@@ -49,50 +48,52 @@ const config: StorybookConfig = {
 					"atlas-variables": require.resolve(
 						path.join(
 							portalPath,
-							"/modules/apps/frontend-theme/frontend-theme-classic/build/css/clay/atlas-variables.scss"
-						)
+							"/modules/apps/frontend-theme/frontend-theme-classic/build/css/clay/atlas-variables.scss",
+						),
 					),
 					"cadmin-variables": require.resolve(
 						path.join(
 							portalPath,
-							"/modules/apps/frontend-theme/frontend-theme-classic/build/css/clay/_cadmin-variables.scss"
-						)
+							"/modules/apps/frontend-theme/frontend-theme-classic/build/css/clay/_cadmin-variables.scss",
+						),
 					),
 				},
 				modules: [
-					...config.resolve?.modules || [],
+					...(config.resolve?.modules || []),
 					path.resolve(nodeModulePath),
 					path.resolve(sxpPath),
 					path.resolve(rankingsPath),
 					path.resolve(synonymsPath),
-				]
-
+				],
 			},
 			module: {
-				...config.module || [],
+				...(config.module || []),
 
 				// Include module components to run babel on. Path from where the
 				// `yarn storybook` command is run.
 				rules: [
-					...config.module?.rules || [],
+					...(config.module?.rules || []),
 					{
 						include: [
 							path.resolve(sxpPath),
 							path.resolve(rankingsPath),
 							path.resolve(synonymsPath),
-						]
+						],
 					},
 					{
 						test: /\.(?:js|mjs|cjs)$/,
 						exclude: /node_modules/,
 						use: {
-							loader: 'babel-loader',
+							loader: "babel-loader",
 							options: {
 								presets: [
-									['@babel/preset-env', { targets: "defaults" }]
-								]
-							}
-						}
+									[
+										"@babel/preset-env",
+										{targets: "defaults"},
+									],
+								],
+							},
+						},
 					},
 					{
 						exclude: /node_modules/,
@@ -101,61 +102,65 @@ const config: StorybookConfig = {
 							{
 								loader: "liferay-lang-key-dev-loader",
 								options: {
-									path: path.join(CWD, "static/Language.properties"),
+									path: path.join(
+										CWD,
+										"static/Language.properties",
+									),
 								},
 							},
 						],
-					}
-				]
+					},
+				],
 			},
 			plugins: [
-				...config.plugins || [],
+				...(config.plugins || []),
 				new webpack.NormalModuleReplacementPlugin(
 					/frontend-js-components-web/,
-					path.join(__dirname, "frontend-js-components-web.mock.js")
+					path.join(__dirname, "frontend-js-components-web.mock.js"),
 				),
 				new webpack.NormalModuleReplacementPlugin(
 					/frontend-js-react-web/,
-					path.join(__dirname, "frontend-js-react-web.mock.js")
+					path.join(__dirname, "frontend-js-react-web.mock.js"),
 				),
 				new webpack.NormalModuleReplacementPlugin(
 					/frontend-js-web/,
-					path.join(__dirname, "frontend-js-web.mock.js")
+					path.join(__dirname, "frontend-js-web.mock.js"),
 				),
 				new webpack.NormalModuleReplacementPlugin(
 					/asset-taglib/,
-					path.join(__dirname, "asset-taglib.mock.js")
+					path.join(__dirname, "asset-taglib.mock.js"),
 				),
 				new webpack.NormalModuleReplacementPlugin(
 					/@liferay\/frontend-js-codemirror-web/,
-					path.join(__dirname, "frontend-js-codemirror-web.mock.js")
+					path.join(__dirname, "frontend-js-codemirror-web.mock.js"),
 				),
 			],
-		}
+		};
 
 		return newConfig;
 	},
 
 	experimental_indexers: async (existingIndexers: Indexer[]) => {
-		return [...existingIndexers,
+		return [
+			...existingIndexers,
 			{
-			  test: /.(m?js|ts)x?$/,
-			  createIndex: existingIndexers[0].createIndex,
-			}
-		  ];
-	  },
+				test: /.(m?js|ts)x?$/,
+				createIndex: existingIndexers[0].createIndex,
+			},
+		];
+	},
 
-    framework: {
-        name: "@storybook/react-webpack5",
-        options: {}
-    },
+	framework: {
+		name: "@storybook/react-webpack5",
+		options: {},
+	},
 
-	staticDirs: ['../static'],
+	staticDirs: ["../static"],
 
-    docs: {},
+	docs: {},
 
-    typescript: {
-        reactDocgen: "react-docgen-typescript"
-    }
+	typescript: {
+		reactDocgen: "react-docgen-typescript",
+	},
 };
 export default config;
