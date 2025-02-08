@@ -56,7 +56,7 @@ function copyStaticFiles() {
  */
 function copyLearnResourcesFile(learnResourcesList) {
 	learnResourcesList.forEach((resource) => {
-		const source = `${process.env.PORTAL_PATH}/learn-resources/${resource}.json`;
+		const source = `${process.env.PORTAL_PATH}/learn-resources/data/${resource}.json`;
 		const destination = `.${process.env.STATIC_PATH}/learn-resources/${resource}.json`;
 
 		fs.copyFile(source, destination, (error) => {
