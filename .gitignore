@@ -27,3 +27,4 @@ yarn-error.log*
 # static files
 /static/Language.properties
 /static/icons.svg
+/static/learn-resources
