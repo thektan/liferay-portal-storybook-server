@@ -21,6 +21,8 @@ module.exports = {
 	LearnMessageProvider,
 	LearnResourcesContext,
 	ManagementToolbar,
+	openSimpleInputModal: (config) => console.log(config),
+	openToast: (config) => console.log(config),
 	TranslationAdminSelector,
 	Treeview,
 };
