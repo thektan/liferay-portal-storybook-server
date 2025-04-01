@@ -82,7 +82,7 @@ const config: StorybookConfig = {
 					},
 					{
 						exclude: /node_modules/,
-						test: /\.js$/,
+						test: /\.js|tsx$/,
 						use: [
 							{
 								loader: "liferay-lang-key-dev-loader",
@@ -96,7 +96,7 @@ const config: StorybookConfig = {
 						],
 					},
 					{
-						test: /\.(?:js|mjs|cjs)$/,
+						test: /\.(?:js|mjs|cjs|tsx)$/,
 						exclude: /node_modules/,
 						use: {
 							loader: "babel-loader",
