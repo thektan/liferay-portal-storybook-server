@@ -21,8 +21,11 @@ const portalPath = process.env.PORTAL_PATH || path.resolve(CWD, "../portal");
 
 const cssPath = `${portalPath}/modules/apps/frontend-theme/frontend-theme-admin/build/css/clay`;
 const nodeModulePath = `${portalPath}/modules/node_modules`;
-const sxpPath = `${portalPath}/modules/dxp/apps/search-experiences/search-experiences-web`;
+
+const cmsSite = `${portalPath}/modules/apps/site/site-cms-site-initializer`;
 const rankingsPath = `${portalPath}/modules/dxp/apps/portal-search-tuning/portal-search-tuning-rankings-web`;
+const searchWebPath = `${portalPath}/modules/apps/portal-search/portal-search-web`;
+const sxpPath = `${portalPath}/modules/dxp/apps/search-experiences/search-experiences-web`;
 const synonymsPath = `${portalPath}/modules/dxp/apps/portal-search-tuning/portal-search-tuning-synonyms-web`;
 
 const config: StorybookConfig = {
@@ -62,7 +65,9 @@ const config: StorybookConfig = {
 				modules: [
 					...(config.resolve?.modules || []),
 					path.resolve(cssPath),
+					path.resolve(cmsSite),
 					path.resolve(nodeModulePath),
+					path.resolve(searchWebPath),
 					path.resolve(sxpPath),
 					path.resolve(rankingsPath),
 					path.resolve(synonymsPath),
@@ -77,6 +82,8 @@ const config: StorybookConfig = {
 					...(config.module?.rules || []),
 					{
 						include: [
+							path.resolve(cmsSite),
+							path.resolve(searchWebPath),
 							path.resolve(sxpPath),
 							path.resolve(rankingsPath),
 							path.resolve(synonymsPath),
