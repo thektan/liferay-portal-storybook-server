@@ -113,3 +113,26 @@ SiteElement.args = {
 		uiConfigurationValues: getUIConfigurationValues(sxpElement),
 	})),
 };
+
+export const CollectionProvider = Template.bind({});
+
+CollectionProvider.args = {
+	...AllElements.args,
+	initialConfiguration: {
+		...INITIAL_CONFIGURATION,
+		generalConfiguration: {
+			clauseContributorsExcludes: [
+				"com.liferay.portal.workflow.kaleo.internal.search.spi.model.query.contributor.KaleoInstanceTokenKeywordQueryContributor",
+			],
+			clauseContributorsIncludes: [
+				"com.liferay.portal.search.internal.spi.model.query.contributor.AlwaysPresentFieldsKeywordQueryContributor",
+				"com.liferay.account.internal.search.spi.model.query.contributor.AccountGroupKeywordQueryContributor",
+			],
+			searchableAssetTypes: [
+				"com.liferay.journal.model.JournalArticle&&Group&&Subtype",
+			],
+			collectionProvider: true,
+			legacyAssetCollectionProvider: true,
+		},
+	},
+};
