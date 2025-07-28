@@ -8,6 +8,7 @@
 
 import LocalStorage from "../static/mock-components/src/main/resources/META-INF/resources/util/local_storage";
 import SessionStorage from "../static/mock-components/src/main/resources/META-INF/resources/util/session_storage";
+import dateUtils from "../static/mock-components/src/main/resources/META-INF/resources/util/date";
 
 /**
  * Appends given parameters to the given URL.
@@ -86,10 +87,6 @@ function sub(string, data) {
 		data[key] === undefined ? match : data[key],
 	);
 }
-
-const dateUtils = {
-	getFirstDayOfWeek: () => 0,
-};
 
 module.exports = {
 	CompatibilityEventProxy: () => {},
