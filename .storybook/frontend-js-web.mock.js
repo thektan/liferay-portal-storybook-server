@@ -82,9 +82,13 @@ function sub(string, data) {
 	}
 
 	return string.replace(REGEX_SUB, (match, key) =>
-		data[key] === undefined ? match : data[key]
+		data[key] === undefined ? match : data[key],
 	);
 }
+
+const dateUtils = {
+	getFirstDayOfWeek: () => 0,
+};
 
 module.exports = {
 	CompatibilityEventProxy: () => {},
@@ -96,6 +100,7 @@ module.exports = {
 	Treeview: () => {},
 	addParams,
 	cancelDebounce,
+	dateUtils,
 	debounce,
 	fetch,
 	navigate: (url, listeners) => console.log({listeners, url}),
