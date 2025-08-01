@@ -72,6 +72,7 @@ const config: StorybookConfig = {
 					path.resolve(rankingsPath),
 					path.resolve(synonymsPath),
 				],
+				extensions: [".js", ".jsx", ".ts", ".tsx"],
 			},
 			module: {
 				...(config.module || []),
@@ -105,7 +106,7 @@ const config: StorybookConfig = {
 						],
 					},
 					{
-						test: /\.(?:js|mjs|cjs|tsx)$/,
+						test: /\.(?:js|mjs|cjs|ts|tsx)$/,
 						exclude: /node_modules/,
 						use: {
 							loader: "babel-loader",
