@@ -20,6 +20,7 @@ const CWD = process.cwd();
 const portalPath = process.env.PORTAL_PATH || path.resolve(CWD, "../portal");
 
 const frontendJsClayPath = `${portalPath}/modules/apps/frontend-js/frontend-js-clay-web`;
+const layoutJsComponentsWebPath = `${portalPath}/modules/apps/layout/layout-js-components-web`;
 const nodeModulePath = `${portalPath}/modules/node_modules`;
 const sxpPath = `${portalPath}/modules/dxp/apps/search-experiences/search-experiences-web`;
 const rankingsPath = `${portalPath}/modules/dxp/apps/portal-search-tuning/portal-search-tuning-rankings-web`;
@@ -63,6 +64,7 @@ const config: StorybookConfig = {
 				modules: [
 					...(config.resolve?.modules || []),
 					path.resolve(frontendJsClayPath),
+					path.resolve(layoutJsComponentsWebPath),
 					path.resolve(nodeModulePath),
 					path.resolve(sxpPath),
 					path.resolve(rankingsPath),
@@ -80,6 +82,7 @@ const config: StorybookConfig = {
 						test: /\.(js|jsx|tsx|ts)$/,
 						include: [
 							path.resolve(frontendJsClayPath),
+							path.resolve(layoutJsComponentsWebPath),
 							path.resolve(sxpPath),
 							path.resolve(rankingsPath),
 							path.resolve(synonymsPath),
@@ -143,6 +146,13 @@ const config: StorybookConfig = {
 					path.join(
 						__dirname,
 						"mock/frontend-js-codemirror-web.mock.js",
+					),
+				),
+				new webpack.NormalModuleReplacementPlugin(
+					/@liferay\/layout-js-components-web/,
+					path.join(
+						__dirname,
+						"mock/layout-js-components-web.mock.js",
 					),
 				),
 				new webpack.NormalModuleReplacementPlugin(
