@@ -162,6 +162,13 @@ const config: StorybookConfig = {
 					),
 				),
 				new webpack.NormalModuleReplacementPlugin(
+					/@liferay\/frontend-js-state-web(\/react)?$/,
+					path.join(
+						__dirname,
+						"mock/frontend-js-state-web.mock.js",
+					),
+				),
+				new webpack.NormalModuleReplacementPlugin(
 					/@liferay\/layout-js-components-web/,
 					path.join(
 						__dirname,

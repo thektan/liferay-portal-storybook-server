@@ -73,6 +73,33 @@ function cancelDebounce(debounced) {
 	clearTimeout(debounced.id);
 }
 
+/**
+ * Recursively clones a value. Mirrors `deepClone` from frontend-js-web closely
+ * enough for Storybook: arrays, plain objects, and Dates are cloned; primitives
+ * are returned as-is.
+ * @param {*} value
+ * @return {*}
+ */
+function deepClone(value) {
+	if (Array.isArray(value)) {
+		return value.map((item) => deepClone(item));
+	}
+
+	if (value instanceof Date) {
+		return new Date(value.getTime());
+	}
+
+	if (value !== null && typeof value === "object") {
+		return Object.entries(value).reduce((acc, [key, item]) => {
+			acc[key] = deepClone(item);
+
+			return acc;
+		}, {});
+	}
+
+	return value;
+}
+
 const REGEX_SUB = /\{\s*([^|}]+?)\s*(?:\|([^}]*))?\s*\}/g;
 
 function sub(string, data) {
@@ -100,6 +127,7 @@ module.exports = {
 	cancelDebounce,
 	dateUtils,
 	debounce,
+	deepClone,
 	fetch,
 	navigate: (url, listeners) => console.log({listeners, url}),
 	openSimpleInputModal: (config) => console.log(config),
