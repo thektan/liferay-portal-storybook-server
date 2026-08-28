@@ -47,6 +47,13 @@ export const FeatureFlagDecorator = (featureFlag, enabled) => (Story) => {
 	return <Story />;
 };
 
+export const LanguageIdDecorator = (Story, {args}) => {
+	window.Liferay.ThemeDisplay.getBCP47LanguageId = () =>
+		args.bcp47LanguageId || "en-US";
+
+	return <Story />;
+};
+
 export const ThemeContextDecorator = (Story) => (
 	<ThemeContext.Provider value={CONTEXT}>
 		<Story />
