@@ -5,6 +5,12 @@ import {LearnResourcesContext} from "../static/mock-components/src/main/resource
 
 import portalSearchWeb from "../static/learn-resources/portal-search-web.json";
 
+export const ColorSchemeDecorator = (colorScheme) => (Story) => {
+	document.documentElement.setAttribute("data-color-scheme", colorScheme);
+
+	return <Story />;
+};
+
 export const FeatureFlagDecorator = (featureFlag, enabled) => (Story) => {
 	window.Liferay.FeatureFlags = {
 		...window.Liferay.FeatureFlags,
