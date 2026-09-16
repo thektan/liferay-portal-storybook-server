@@ -22,18 +22,18 @@ const Template = () => (
 				concurrentModeSupported: true,
 				omniadmin: true,
 				initialExecutionMode: "concurrent",
-				indexReindexerNames: [
-					{
-						displayName: "Ranking",
-						className:
-							"com.liferay.portal.search.tuning.rankings.web.internal.index.RankingIndexReindexer",
-					},
-					{
-						displayName: "Synonym Set",
-						className:
-							"com.liferay.portal.search.tuning.synonyms.web.internal.index.SynonymSetIndexReindexer",
-					},
-				],
+				indexReindexersMap: {
+					"Search Tuning": [
+						{
+						"className": "com.liferay.portal.search.tuning.rankings.web.internal.index.RankingIndexReindexer",
+						"displayName": "Ranking"
+						},
+						{
+						"className": "com.liferay.portal.search.tuning.synonyms.web.internal.index.SynonymSetIndexReindexer",
+						"displayName": "Synonym Set"
+						}
+					],
+				},
 				virtualInstances: [
 					{
 						name: "System",
