@@ -38,6 +38,12 @@ export const EditElementDecorator = (Story) => (
 	</ErrorBoundary>
 );
 
+export const ColorSchemeDecorator = (colorScheme) => (Story) => {
+	document.documentElement.setAttribute("data-color-scheme", colorScheme);
+
+	return <Story />;
+};
+
 export const FeatureFlagDecorator = (featureFlag, enabled) => (Story) => {
 	window.Liferay.FeatureFlags = {
 		...window.Liferay.FeatureFlags,
