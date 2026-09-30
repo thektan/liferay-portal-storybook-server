@@ -5,8 +5,11 @@ import {LearnResourcesContext} from "../static/mock-components/src/main/resource
 
 import portalSearchWeb from "../static/learn-resources/portal-search-web.json";
 
-export const ColorSchemeDecorator = (colorScheme) => (Story) => {
-	document.documentElement.setAttribute("data-color-scheme", colorScheme);
+export const ColorSchemeToolbarDecorator = (Story, {globals}) => {
+	document.documentElement.setAttribute(
+		"data-color-scheme",
+		globals.colorScheme || "light",
+	);
 
 	return <Story />;
 };
